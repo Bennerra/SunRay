@@ -15,5 +15,10 @@
     "indent": ["error", 2],
     "no-multi-spaces": "error",
     "no-multiple-empty-lines": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

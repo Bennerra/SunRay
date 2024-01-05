@@ -2,20 +2,9 @@ import React, { FC } from "react";
 import { Controller, FieldPath } from "react-hook-form";
 import { FormControlLabel, Radio } from "@mui/material";
 
-import { IOption } from "../../../models/IOption";
+import RadioOptions from "../../../mocks/LoginRadioOptions.json";
 
 import { RadioLayout } from "../LoginForm/styles";
-
-const options: IOption[] = [
-  {
-    label: "Я продавец",
-    value: "seller",
-  },
-  {
-    label: "Я покупатель",
-    value: "buyer",
-  },
-];
 
 interface IFormProps {
   name: FieldPath<any>;
@@ -24,7 +13,7 @@ interface IFormProps {
 
 const RadioList: FC<IFormProps> = ({ name, control }) => {
   const generateRadioOptions = () => {
-    return options.map((option) => (
+    return RadioOptions.map((option) => (
       <FormControlLabel
         key={option.value}
         control={<Radio disableRipple />}

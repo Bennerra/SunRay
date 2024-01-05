@@ -2,15 +2,16 @@ import React, { FC } from "react";
 import styled from "styled-components";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { FieldErrors, useForm } from "react-hook-form";
 
-import { SiteContainer, BigButton } from "../../../styles/components";
-import { FormLoginLayout, FormTitle } from "./styles";
+import { IFormField } from "../../../models/IFormField";
 
 import { HeaderForm } from "../HeaderForm";
 import { RadioList } from "../RadioList";
-import { useForm } from "react-hook-form";
-import {IFormField} from "../../../models/IFormField";
-import FormField from "../FormField/FormField";
+import { FormField } from "../FormField";
+
+import { SiteContainer, BigButton } from "../../../styles/components";
+import { FormLoginLayout, FormTitle } from "./styles";
 
 const MainForm = styled.form`
   width: 100%;
@@ -93,6 +94,7 @@ const LoginForm: FC = () => {
   });
 
   const onSubmit = (data: FormData) => {
+    // eslint-disable-next-line no-console
     console.log(data);
   };
 
@@ -110,9 +112,12 @@ const LoginForm: FC = () => {
               <FormField
                 key={option.name}
                 name={option.name}
-                control={control}
                 label={option.label}
-                errors={errors}
+                control={control}
+                helperText={
+                  errors?.[option.name as keyof FieldErrors<FormData>]?.message
+                }
+                error={!!errors?.[option.name as keyof FieldErrors<FormData>]}
               />
             ))}
             <BigButton

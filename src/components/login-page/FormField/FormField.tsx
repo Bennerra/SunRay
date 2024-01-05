@@ -1,15 +1,23 @@
-import React, {FC} from "react";
-import {FormLoginField} from "../LoginForm/styles";
-import {Controller, FieldErrors, FieldPath, UseControllerProps} from "react-hook-form";
+import React, { FC } from "react";
+import { Controller, FieldPath } from "react-hook-form";
 
-interface FormFieldProps<T> extends UseControllerProps<T> {
-  errors: FieldErrors;
+import { FormLoginField } from "../LoginForm/styles";
+
+interface IFormFieldProps {
   name: FieldPath<any>;
   control: any;
   label: string;
+  helperText: string | undefined;
+  error: boolean | undefined;
 }
 
-const FormField: FC<FormFieldProps<UseControllerProps>> = ({ name, control, errors, label }) => {
+const FormField: FC<IFormFieldProps> = ({
+  name,
+  control,
+  label,
+  helperText,
+  error,
+}) => {
   return (
     <Controller
       name={name}
@@ -20,8 +28,8 @@ const FormField: FC<FormFieldProps<UseControllerProps>> = ({ name, control, erro
           value={value}
           onChange={onChange}
           onBlur={onBlur}
-          helperText={errors?.[name]?.message}
-          error={!!errors?.[name]}
+          helperText={helperText}
+          error={error}
           color="secondary"
           required
           label={label}

@@ -1,4 +1,4 @@
-import { Box, styled, Typography } from "@mui/material";
+import { Box, RadioGroup, styled, TextField, Typography } from "@mui/material";
 
 export const FormLoginLayout = styled(Box)(() => ({
   width: "74%",
@@ -12,6 +12,7 @@ export const FormLoginLayout = styled(Box)(() => ({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
+  marginBottom: "150px",
 }));
 
 export const FormTitle = styled(Typography)(() => ({
@@ -19,3 +20,28 @@ export const FormTitle = styled(Typography)(() => ({
   fontWeight: 500,
   marginBottom: "46px",
 }));
+
+export const RadioLayout = styled(RadioGroup)(() => ({
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "start",
+  marginBottom: "62px",
+}));
+
+export const FormLoginField = styled(TextField)`
+  width: 100%;
+  margin-bottom: 18px;
+  & .MuiInputBase-root {
+    border-radius: 19px;
+  }
+  &:hover fieldset {
+    border-radius: 19px;
+    border: 2px solid #a6a6a6;
+  }
+  &:focus-within fieldset,
+  &:focus-visible fieldset {
+    border-radius: 19px;
+    border: 2px solid #a6a6a6;
+  }
+`;

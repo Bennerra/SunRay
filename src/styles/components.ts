@@ -1,4 +1,11 @@
-import { Button, Container, styled } from "@mui/material";
+import { Box, Button, Container, styled } from "@mui/material";
+
+export const Wrapper = styled(Box)(() => ({
+  display: "flex",
+  flexDirection: "column",
+  minHeight: "100vh",
+  overflow: "hidden",
+}));
 
 export const SiteContainer = styled(Container)(() => ({
   maxWidth: "1200px",
@@ -19,4 +26,16 @@ export const SmallButton = styled(Button)(() => ({
   textTransform: "none",
   color: "#fff",
   padding: "10px 41px",
+}));
+
+export const BigButton = styled(Button)(() => ({
+  width: "100%",
+  maxWidth: "476px",
+  borderRadius: "16px",
+  fontSize: "29px",
+  fontWeight: 600,
+  lineHeight: "normal",
+  textTransform: "none",
+  color: "#fff",
+  padding: "19px 0px",
 }));

@@ -20,5 +20,13 @@ export const theme = createTheme({
         disableElevation: true,
       },
     },
+    MuiFormControlLabel: {
+      styleOverrides: {
+        label: {
+          color: "#353535",
+          fontSize: "23px",
+        },
+      },
+    },
   },
 });

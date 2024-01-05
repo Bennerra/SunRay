@@ -7,6 +7,7 @@ interface IFormFieldProps {
   name: FieldPath<any>;
   control: any;
   label: string;
+  type: string;
   helperText: string | undefined;
   error: boolean | undefined;
 }
@@ -15,6 +16,7 @@ const FormField: FC<IFormFieldProps> = ({
   name,
   control,
   label,
+  type,
   helperText,
   error,
 }) => {
@@ -33,6 +35,7 @@ const FormField: FC<IFormFieldProps> = ({
           color="secondary"
           required
           label={label}
+          type={type}
         />
       )}
     />

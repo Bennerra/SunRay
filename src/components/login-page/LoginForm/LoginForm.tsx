@@ -24,34 +24,42 @@ const options: IFormField[] = [
   {
     label: "Имя",
     name: "name",
+    type: "text",
   },
   {
     label: "Фамилия",
     name: "lastName",
+    type: "text",
   },
   {
     label: "Отчество",
     name: "middleName",
+    type: "text",
   },
   {
     label: "Название ИП",
     name: "companyName",
+    type: "text",
   },
   {
     label: "ИНН",
     name: "inn",
+    type: "text",
   },
   {
     label: "Номер телефона",
     name: "number",
+    type: "tel",
   },
   {
     label: "Почта",
     name: "email",
+    type: "email",
   },
   {
     label: "Пароль",
     name: "password",
+    type: "password",
   },
 ];
 
@@ -113,6 +121,7 @@ const LoginForm: FC = () => {
                 key={option.name}
                 name={option.name}
                 label={option.label}
+                type={option.type}
                 control={control}
                 helperText={
                   errors?.[option.name as keyof FieldErrors<FormData>]?.message

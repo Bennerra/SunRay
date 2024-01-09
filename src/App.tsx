@@ -6,7 +6,7 @@ import { theme } from "./styles/theme";
 import { Wrapper } from "./styles/components";
 import GlobalStyles from "./styles/global";
 
-import { LoginForm } from "./components/login-page/LoginForm";
+import { Login } from "./pages/Login";
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
       <Wrapper>
         <Router>
           <Routes>
-            <Route path="/" element={<LoginForm />} />
+            <Route path="/" element={<Login />} />
           </Routes>
         </Router>
         <GlobalStyles />

@@ -8,13 +8,12 @@ import {
 } from "../../../models/LoginFormData";
 import { loginFormSchema } from "../../../utils/schems/LoginFormSchems";
 
-import { HeaderForm } from "../HeaderForm";
 import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
 import { SellerForm } from "../SellerForm";
 
 import { SiteContainer } from "../../../styles/components";
-import { LoginFormLayout } from "../../layouts/LoginFormLayout";
+import { LoginFormLayout } from "../../../layouts/LoginFormLayout";
 
 const LoginForm: FC = () => {
   const [status, setStatus] = useState("");
@@ -40,7 +39,6 @@ const LoginForm: FC = () => {
 
   return (
     <>
-      <HeaderForm />
       <SiteContainer>
         <LoginFormLayout handleSubmit={handleSubmit} onSubmit={onSubmit}>
           <RadioList name="status" control={control} />

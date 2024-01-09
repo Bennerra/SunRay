@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Controller } from "react-hook-form";
 
-import { IFormFieldProps } from "../../../models/IFormFieldProps";
+import { IFormFieldProps } from "./types";
 
 import { FormLoginField } from "../LoginForm/styles";
 

@@ -1,12 +1,8 @@
 import React, { FC } from "react";
-import { FieldErrors } from "react-hook-form";
 
 import BuyerFormFieldsData from "../../../mocks/BuyerLoginFields.json";
-import { IBuyerFormProps } from "../../../models/IBuyerFormProps";
-import {
-  TBuyerLoginFormData,
-  TSellerLoginFormData,
-} from "../../../models/LoginFormData";
+import { IBuyerFormProps } from "./types";
+import { TKeyError } from "../../../models/TKeyError";
 
 import { FormField } from "../FormField";
 import { ClientFormLayout } from "../../../styles/components";
@@ -20,20 +16,8 @@ const BuyerForm: FC<IBuyerFormProps> = ({ control, errors }) => {
         <FormField
           key={option.name}
           control={control}
-          helperText={
-            errors?.[
-              option.name as keyof FieldErrors<
-                TBuyerLoginFormData | TSellerLoginFormData
-              >
-            ]?.message
-          }
-          error={
-            !!errors?.[
-              option.name as keyof FieldErrors<
-                TBuyerLoginFormData | TSellerLoginFormData
-              >
-            ]
-          }
+          helperText={errors?.[option.name as TKeyError]?.message}
+          error={!!errors?.[option.name as TKeyError]}
           {...option}
         />
       ))}

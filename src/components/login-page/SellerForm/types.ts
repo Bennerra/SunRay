@@ -1,5 +1,5 @@
 import { FieldErrors } from "react-hook-form";
-import { TSellerLoginFormData } from "./LoginFormData";
+import { TSellerLoginFormData } from "../../../models/LoginFormData";
 
 export interface ISellerFormProps {
   errors: FieldErrors<TSellerLoginFormData>;

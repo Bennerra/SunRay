@@ -9,12 +9,13 @@ import {
 } from "../../../models/LoginFormData";
 
 import { FormField } from "../FormField";
+import { ClientFormLayout } from "../../../styles/components";
 
 const BuyerForm: FC<IBuyerFormProps> = ({ control, errors }) => {
   const buyerFormFields = BuyerFormFieldsData;
 
   return (
-    <>
+    <ClientFormLayout>
       {buyerFormFields.map((option) => (
         <FormField
           key={option.name}
@@ -36,7 +37,7 @@ const BuyerForm: FC<IBuyerFormProps> = ({ control, errors }) => {
           {...option}
         />
       ))}
-    </>
+    </ClientFormLayout>
   );
 };
 

@@ -4,7 +4,7 @@ import { FormControlLabel, Radio } from "@mui/material";
 
 import RadioOptions from "../../../mocks/LoginRadioOptions.json";
 
-import { RadioLayout } from "../LoginForm/styles";
+import { RadioLayout } from "./styles";
 
 interface IFormProps {
   name: FieldPath<any>;

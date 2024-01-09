@@ -13,10 +13,8 @@ import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
 import { SellerForm } from "../SellerForm";
 
-import { SiteContainer, BigButton } from "../../../styles/components";
-import { FormLoginLayout, FormTitle } from "./styles";
-import { MainForm } from "../../../styles/mainForm";
-
+import { SiteContainer } from "../../../styles/components";
+import { LoginFormLayout } from "../../layouts/LoginFormLayout";
 
 const LoginForm: FC = () => {
   const [status, setStatus] = useState("");
@@ -44,28 +42,15 @@ const LoginForm: FC = () => {
     <>
       <HeaderForm />
       <SiteContainer>
-        <FormLoginLayout>
-          <FormTitle color="#353535" variant="h1">
-            Присоединяйся к SunRay!
-          </FormTitle>
-          <MainForm onSubmit={handleSubmit(onSubmit)}>
-            <RadioList name="status" control={control} />
-            {status === "buyer" && (
-              <BuyerForm errors={errors} control={control} />
-            )}
-            {status === "seller" && (
-              <SellerForm errors={errors} control={control} />
-            )}
-            <BigButton
-              style={{ marginTop: "51px" }}
-              variant="contained"
-              color="primary"
-              type="submit"
-            >
-              Далее
-            </BigButton>
-          </MainForm>
-        </FormLoginLayout>
+        <LoginFormLayout handleSubmit={handleSubmit} onSubmit={onSubmit}>
+          <RadioList name="status" control={control} />
+          {status === "buyer" && (
+            <BuyerForm errors={errors} control={control} />
+          )}
+          {status === "seller" && (
+            <SellerForm errors={errors} control={control} />
+          )}
+        </LoginFormLayout>
       </SiteContainer>
     </>
   );

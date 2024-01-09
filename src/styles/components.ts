@@ -39,3 +39,7 @@ export const BigButton = styled(Button)(() => ({
   color: "#fff",
   padding: "19px 0px",
 }));
+
+export const ClientFormLayout = styled(Box)(() => ({
+  marginBottom: "51px",
+}));

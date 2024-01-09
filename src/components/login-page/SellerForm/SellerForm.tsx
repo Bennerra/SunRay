@@ -2,21 +2,21 @@ import React, { FC } from "react";
 import { FieldErrors } from "react-hook-form";
 
 import { TKeyError } from "../../../models/TKeyError";
-import { TBuyerLoginFormData } from "../../../models/LoginFormData";
-import buyerFormFieldsData from "../../../mocks/BuyerLoginFields.json";
+import sellerFormFieldsData from "../../../mocks/SellerLoginFields.json";
+import { TSellerLoginFormData } from "../../../models/LoginFormData";
 
 import { FormField } from "../FormField";
 
 import { ClientFormLayout } from "../../../styles/components";
 
-interface IBuyerFormProps {
-  errors: FieldErrors<TBuyerLoginFormData>;
+interface ISellerFormProps {
+  errors: FieldErrors<TSellerLoginFormData>;
   control: any;
 }
 
-const BuyerForm: FC<IBuyerFormProps> = ({ control, errors }) => (
+const SellerForm: FC<ISellerFormProps> = ({ errors, control }) => (
   <ClientFormLayout>
-    {buyerFormFieldsData.map((option) => (
+    {sellerFormFieldsData.map((option) => (
       <FormField
         key={option.name}
         control={control}
@@ -28,4 +28,4 @@ const BuyerForm: FC<IBuyerFormProps> = ({ control, errors }) => (
   </ClientFormLayout>
 );
 
-export default BuyerForm;
+export default SellerForm;

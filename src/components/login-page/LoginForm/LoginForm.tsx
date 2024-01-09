@@ -1,51 +1,44 @@
-import React, { FC } from "react";
-import * as yup from "yup";
+import React, { FC, useEffect, useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { FieldErrors, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
-import FormFieldsData from "../../../mocks/LoginFormFields.json";
-import { LoginFormData } from "../../../models/FormData";
+import {
+  TBuyerLoginFormData,
+  TSellerLoginFormData,
+} from "../../../models/LoginFormData";
+import { loginFormSchema } from "../../../utils/schems/LoginFormSchems";
 
 import { HeaderForm } from "../HeaderForm";
 import { RadioList } from "../RadioList";
-import { FormField } from "../FormField";
+import { BuyerForm } from "../BuyerForm";
+import { SellerForm } from "../SellerForm";
 
 import { SiteContainer, BigButton } from "../../../styles/components";
 import { FormLoginLayout, FormTitle } from "./styles";
 import { MainForm } from "../../../styles/mainForm";
 
-const shema = yup.object().shape({
-  name: yup.string().required("Это обязательное поле!"),
-  lastName: yup.string().required("Это обязательное поле!"),
-  companyName: yup.string().required("Это обязательное поле!"),
-  inn: yup.string().required("Это обязательное поле!"),
-  number: yup.string().required("Это обязательное поле!"),
-  email: yup
-    .string()
-    .required("Это обязательное поле!")
-    .email("Некорректный email"),
-  password: yup
-    .string()
-    .required("Это обязательное поле!")
-    .min(8, "Пароль должен быть не менее 8 символов"),
-});
 
 const LoginForm: FC = () => {
+  const [status, setStatus] = useState("");
+
   const {
     control,
     handleSubmit,
+    watch,
     formState: { errors },
-  } = useForm<LoginFormData>({
+  } = useForm<TBuyerLoginFormData | TSellerLoginFormData>({
     mode: "onBlur",
-    resolver: yupResolver(shema) as any,
+    resolver: yupResolver(loginFormSchema) as any,
   });
 
-  const onSubmit = (data: LoginFormData) => {
+  const onSubmit = (data: TBuyerLoginFormData | TSellerLoginFormData) => {
     // eslint-disable-next-line no-console
     console.log(data);
   };
 
-  const formFields = FormFieldsData;
+  useEffect(() => {
+    setStatus(watch("status"));
+  });
 
   return (
     <>
@@ -57,22 +50,12 @@ const LoginForm: FC = () => {
           </FormTitle>
           <MainForm onSubmit={handleSubmit(onSubmit)}>
             <RadioList name="status" control={control} />
-            {formFields.map((option) => (
-              <FormField
-                key={option.name}
-                name={option.name}
-                label={option.label}
-                type={option.type}
-                control={control}
-                helperText={
-                  errors?.[option.name as keyof FieldErrors<LoginFormData>]
-                    ?.message
-                }
-                error={
-                  !!errors?.[option.name as keyof FieldErrors<LoginFormData>]
-                }
-              />
-            ))}
+            {status === "buyer" && (
+              <BuyerForm errors={errors} control={control} />
+            )}
+            {status === "seller" && (
+              <SellerForm errors={errors} control={control} />
+            )}
             <BigButton
               style={{ marginTop: "51px" }}
               variant="contained"

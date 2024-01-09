@@ -1,16 +1,9 @@
 import React, { FC } from "react";
-import { Controller, FieldPath } from "react-hook-form";
+import { Controller } from "react-hook-form";
+
+import { IFormFieldProps } from "../../../models/IFormFieldProps";
 
 import { FormLoginField } from "../LoginForm/styles";
-
-interface IFormFieldProps {
-  name: FieldPath<any>;
-  control: any;
-  label: string;
-  type: string;
-  helperText: string | undefined;
-  error: boolean | undefined;
-}
 
 const FormField: FC<IFormFieldProps> = ({
   name,
@@ -19,6 +12,7 @@ const FormField: FC<IFormFieldProps> = ({
   type,
   helperText,
   error,
+  required,
 }) => {
   return (
     <Controller
@@ -33,7 +27,7 @@ const FormField: FC<IFormFieldProps> = ({
           helperText={helperText}
           error={error}
           color="secondary"
-          required
+          required={required}
           label={label}
           type={type}
         />

@@ -5,15 +5,15 @@ import { useForm } from "react-hook-form";
 import {
   TBuyerLoginFormData,
   TSellerLoginFormData,
-} from "../../../models/LoginFormData";
-import { loginFormSchema } from "../../../utils/schems/LoginFormSchems";
+} from "@/models/LoginFormData";
+import { loginFormSchema } from "@/utils/schems/LoginFormSchems";
 
 import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
 import { SellerForm } from "../SellerForm";
 
-import { SiteContainer } from "../../../styles/components";
-import { LoginFormLayout } from "../../../layouts/LoginFormLayout";
+import { SiteContainer } from "@/styles/components";
+import { LoginFormLayout } from "@/layouts/LoginFormLayout";
 
 const LoginForm: FC = () => {
   const [status, setStatus] = useState("");

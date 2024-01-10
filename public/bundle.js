@@ -4110,7 +4110,75 @@
       ) => {
         "use strict";
         eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/ThemeProvider.js");\n/* harmony import */ var _styles_theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/theme */ "./src/styles/theme.ts");\n/* harmony import */ var _styles_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/components */ "./src/styles/components.ts");\n/* harmony import */ var _styles_global__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/global */ "./src/styles/global.ts");\n/* harmony import */ var _components_login_page_LoginForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/login-page/LoginForm */ "./src/components/login-page/LoginForm/index.ts");\n\n\n\n\n\n\n\nvar App = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { theme: _styles_theme__WEBPACK_IMPORTED_MODULE_1__.theme },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_2__.Wrapper, null,\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, null,\n                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null,\n                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, { path: "/", element: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_login_page_LoginForm__WEBPACK_IMPORTED_MODULE_4__.LoginForm, null) }))),\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_global__WEBPACK_IMPORTED_MODULE_3__["default"], null))));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n\n//# sourceURL=webpack://test/./src/App.tsx?'
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/ThemeProvider.js");\n/* harmony import */ var _styles_theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/theme */ "./src/styles/theme.ts");\n/* harmony import */ var _styles_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/components */ "./src/styles/components.ts");\n/* harmony import */ var _styles_global__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/global */ "./src/styles/global.ts");\n/* harmony import */ var _pages_Login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Login */ "./src/pages/Login/index.ts");\n\n\n\n\n\n\n\nvar App = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { theme: _styles_theme__WEBPACK_IMPORTED_MODULE_1__.theme },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_2__.Wrapper, null,\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, null,\n                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null,\n                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, { path: "/", element: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Login__WEBPACK_IMPORTED_MODULE_4__.Login, null) }))),\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_global__WEBPACK_IMPORTED_MODULE_3__["default"], null))));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n\n//# sourceURL=webpack://test/./src/App.tsx?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/components/login-page/BuyerForm/BuyerForm.tsx":
+      /*!***********************************************************!*\
+  !*** ./src/components/login-page/BuyerForm/BuyerForm.tsx ***!
+  \***********************************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          "__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module '@/mocks/BuyerLoginFields.json'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module '@/components/login-page/FormField'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module '@/styles/components'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nvar __assign = (undefined && undefined.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\n\n\n\n\nvar BuyerForm = function (_a) {\n    var control = _a.control, errors = _a.errors;\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '@/styles/components'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), null, Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '@/mocks/BuyerLoginFields.json'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(function (option) {\n        var _a;\n        return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '@/components/login-page/FormField'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), __assign({ key: option.name, control: control, helperText: (_a = errors === null || errors === void 0 ? void 0 : errors[option.name]) === null || _a === void 0 ? void 0 : _a.message, error: !!(errors === null || errors === void 0 ? void 0 : errors[option.name]) }, option)));\n    })));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BuyerForm);\n\n\n//# sourceURL=webpack://test/./src/components/login-page/BuyerForm/BuyerForm.tsx?"
+        );
+
+        /***/
+      },
+
+    /***/ "./src/components/login-page/BuyerForm/index.ts":
+      /*!******************************************************!*\
+  !*** ./src/components/login-page/BuyerForm/index.ts ***!
+  \******************************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   BuyerForm: () => (/* reexport safe */ _BuyerForm__WEBPACK_IMPORTED_MODULE_0__["default"])\n/* harmony export */ });\n/* harmony import */ var _BuyerForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BuyerForm */ "./src/components/login-page/BuyerForm/BuyerForm.tsx");\n\n\n\n//# sourceURL=webpack://test/./src/components/login-page/BuyerForm/index.ts?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/components/login-page/FormField/FormField.tsx":
+      /*!***********************************************************!*\
+  !*** ./src/components/login-page/FormField/FormField.tsx ***!
+  \***********************************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.mjs");\n/* harmony import */ var _LoginForm_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../LoginForm/styles */ "./src/components/login-page/LoginForm/styles.ts");\n\n\n\nvar FormField = function (_a) {\n    var name = _a.name, control = _a.control, label = _a.label, type = _a.type, helperText = _a.helperText, error = _a.error, required = _a.required;\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_hook_form__WEBPACK_IMPORTED_MODULE_2__.Controller, { name: name, control: control, defaultValue: "", render: function (_a) {\n            var _b = _a.field, onChange = _b.onChange, value = _b.value, onBlur = _b.onBlur;\n            return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_LoginForm_styles__WEBPACK_IMPORTED_MODULE_1__.FormLoginField, { value: value, onChange: onChange, onBlur: onBlur, helperText: helperText, error: error, color: "secondary", required: required, label: label, type: type }));\n        } }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FormField);\n\n\n//# sourceURL=webpack://test/./src/components/login-page/FormField/FormField.tsx?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/components/login-page/FormField/index.ts":
+      /*!******************************************************!*\
+  !*** ./src/components/login-page/FormField/index.ts ***!
+  \******************************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FormField: () => (/* reexport safe */ _FormField__WEBPACK_IMPORTED_MODULE_0__["default"])\n/* harmony export */ });\n/* harmony import */ var _FormField__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormField */ "./src/components/login-page/FormField/FormField.tsx");\n\n\n\n//# sourceURL=webpack://test/./src/components/login-page/FormField/index.ts?'
         );
 
         /***/
@@ -4127,7 +4195,7 @@
       ) => {
         "use strict";
         eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/components */ "./src/styles/components.ts");\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles */ "./src/components/login-page/HeaderForm/styles.ts");\n/* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../assets/logo.svg */ "./src/assets/logo.svg");\n\n\n\n\nvar HeaderForm = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles__WEBPACK_IMPORTED_MODULE_2__.HeaderLayout, null,\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_1__.HeaderContainer, null,\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_assets_logo_svg__WEBPACK_IMPORTED_MODULE_3__["default"], null),\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_1__.SmallButton, { variant: "contained", color: "primary" }, "\\u0413\\u043B\\u0430\\u0432\\u043D\\u0430\\u044F"))));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderForm);\n\n\n//# sourceURL=webpack://test/./src/components/login-page/HeaderForm/HeaderForm.tsx?'
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/components */ "./src/styles/components.ts");\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles */ "./src/components/login-page/HeaderForm/styles.ts");\n/* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../assets/logo.svg */ "./src/assets/logo.svg");\n\n\n\n\nvar HeaderForm = function () { return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles__WEBPACK_IMPORTED_MODULE_2__.HeaderLayout, null,\n    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_1__.HeaderContainer, null,\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_assets_logo_svg__WEBPACK_IMPORTED_MODULE_3__["default"], null),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_1__.SmallButton, { variant: "contained", color: "primary" }, "\\u0413\\u043B\\u0430\\u0432\\u043D\\u0430\\u044F")))); };\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderForm);\n\n\n//# sourceURL=webpack://test/./src/components/login-page/HeaderForm/HeaderForm.tsx?'
         );
 
         /***/
@@ -4178,7 +4246,7 @@
       ) => {
         "use strict";
         eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");\n/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! yup */ "./node_modules/yup/index.esm.js");\n/* harmony import */ var _hookform_resolvers_yup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @hookform/resolvers/yup */ "./node_modules/@hookform/resolvers/yup/dist/yup.mjs");\n/* harmony import */ var _styles_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/components */ "./src/styles/components.ts");\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles */ "./src/components/login-page/LoginForm/styles.ts");\n/* harmony import */ var _HeaderForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../HeaderForm */ "./src/components/login-page/HeaderForm/index.ts");\n/* harmony import */ var _RadioList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../RadioList */ "./src/components/login-page/RadioList/index.ts");\n/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.mjs");\nvar __makeTemplateObject = (undefined && undefined.__makeTemplateObject) || function (cooked, raw) {\n    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }\n    return cooked;\n};\n\n\n\n\n\n\n\n\n\n// import { IFormField } from "../../../models/IFormField";\n// import FormField from "../FormField/FormField";\nvar MainForm = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].form(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n  width: 100%;\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n"], ["\\n  width: 100%;\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n"])));\nvar shema = yup__WEBPACK_IMPORTED_MODULE_1__.object().shape({\n    name: yup__WEBPACK_IMPORTED_MODULE_1__.string().required("Это обязательное поле!"),\n    lastName: yup__WEBPACK_IMPORTED_MODULE_1__.string().required("Это обязательное поле!"),\n    companyName: yup__WEBPACK_IMPORTED_MODULE_1__.string().required("Это обязательное поле!"),\n    inn: yup__WEBPACK_IMPORTED_MODULE_1__.string().required("Это обязательное поле!"),\n    number: yup__WEBPACK_IMPORTED_MODULE_1__.string().required("Это обязательное поле!"),\n    email: yup__WEBPACK_IMPORTED_MODULE_1__.string()\n        .required("Это обязательное поле!")\n        .email("Некорректный email"),\n    password: yup__WEBPACK_IMPORTED_MODULE_1__.string()\n        .required("Это обязательное поле!")\n        .min(8, "Пароль должен быть не менее 8 символов"),\n});\nvar LoginForm = function () {\n    var _a = (0,react_hook_form__WEBPACK_IMPORTED_MODULE_8__.useForm)({\n        mode: "onBlur",\n        resolver: (0,_hookform_resolvers_yup__WEBPACK_IMPORTED_MODULE_2__.yupResolver)(shema),\n    }), control = _a.control, handleSubmit = _a.handleSubmit, errors = _a.formState.errors;\n    var onSubmit = function (data) {\n        console.log(data);\n    };\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null,\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderForm__WEBPACK_IMPORTED_MODULE_5__.HeaderForm, null),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_3__.SiteContainer, null,\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles__WEBPACK_IMPORTED_MODULE_4__.FormLoginLayout, null,\n                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles__WEBPACK_IMPORTED_MODULE_4__.FormTitle, { color: "#353535", variant: "h1" }, "\\u041F\\u0440\\u0438\\u0441\\u043E\\u0435\\u0434\\u0438\\u043D\\u044F\\u0439\\u0441\\u044F \\u043A SunRay!"),\n                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(MainForm, { onSubmit: handleSubmit(onSubmit) },\n                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_RadioList__WEBPACK_IMPORTED_MODULE_6__.RadioList, { name: "status", control: control }),\n                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_3__.BigButton, { style: { marginTop: "51px" }, variant: "contained", color: "primary", type: "submit" }, "\\u0414\\u0430\\u043B\\u0435\\u0435"))))));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LoginForm);\nvar templateObject_1;\n\n\n//# sourceURL=webpack://test/./src/components/login-page/LoginForm/LoginForm.tsx?'
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _hookform_resolvers_yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @hookform/resolvers/yup */ "./node_modules/@hookform/resolvers/yup/dist/yup.mjs");\n/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.mjs");\n/* harmony import */ var _utils_schems_LoginFormSchems__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../utils/schems/LoginFormSchems */ "./src/utils/schems/LoginFormSchems.ts");\n/* harmony import */ var _RadioList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../RadioList */ "./src/components/login-page/RadioList/index.ts");\n/* harmony import */ var _BuyerForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../BuyerForm */ "./src/components/login-page/BuyerForm/index.ts");\n/* harmony import */ var _SellerForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../SellerForm */ "./src/components/login-page/SellerForm/index.ts");\n/* harmony import */ var _styles_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../styles/components */ "./src/styles/components.ts");\n/* harmony import */ var _layouts_LoginFormLayout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../layouts/LoginFormLayout */ "./src/layouts/LoginFormLayout/index.ts");\n\n\n\n\n\n\n\n\n\nvar LoginForm = function () {\n    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""), status = _a[0], setStatus = _a[1];\n    var _b = (0,react_hook_form__WEBPACK_IMPORTED_MODULE_8__.useForm)({\n        mode: "onBlur",\n        resolver: (0,_hookform_resolvers_yup__WEBPACK_IMPORTED_MODULE_1__.yupResolver)(_utils_schems_LoginFormSchems__WEBPACK_IMPORTED_MODULE_2__.loginFormSchema),\n    }), control = _b.control, handleSubmit = _b.handleSubmit, watch = _b.watch, errors = _b.formState.errors;\n    var onSubmit = function (data) {\n        // eslint-disable-next-line no-console\n        console.log(data);\n    };\n    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {\n        setStatus(watch("status"));\n    });\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null,\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_6__.SiteContainer, null,\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_layouts_LoginFormLayout__WEBPACK_IMPORTED_MODULE_7__.LoginFormLayout, { handleSubmit: handleSubmit, onSubmit: onSubmit },\n                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_RadioList__WEBPACK_IMPORTED_MODULE_3__.RadioList, { name: "status", control: control }),\n                status === "buyer" && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BuyerForm__WEBPACK_IMPORTED_MODULE_4__.BuyerForm, { errors: errors, control: control })),\n                status === "seller" && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SellerForm__WEBPACK_IMPORTED_MODULE_5__.SellerForm, { errors: errors, control: control }))))));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LoginForm);\n\n\n//# sourceURL=webpack://test/./src/components/login-page/LoginForm/LoginForm.tsx?'
         );
 
         /***/
@@ -4212,7 +4280,7 @@
       ) => {
         "use strict";
         eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FormLoginField: () => (/* binding */ FormLoginField),\n/* harmony export */   FormLoginLayout: () => (/* binding */ FormLoginLayout),\n/* harmony export */   FormTitle: () => (/* binding */ FormTitle),\n/* harmony export */   RadioLayout: () => (/* binding */ RadioLayout)\n/* harmony export */ });\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/styled.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Typography/Typography.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/RadioGroup/RadioGroup.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/TextField/TextField.js");\nvar __makeTemplateObject = (undefined && undefined.__makeTemplateObject) || function (cooked, raw) {\n    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }\n    return cooked;\n};\n\nvar FormLoginLayout = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"])(function () { return ({\n    width: "74%",\n    margin: "0 auto",\n    padding: "80px 90px 122px 90px",\n    borderRadius: "60px",\n    border: "2px solid #F2F2F2",\n    background: "#fff",\n    boxShadow: "12px 9px 77px 0px rgba(53, 53, 53, 0.05)",\n    display: "flex",\n    flexDirection: "column",\n    alignItems: "center",\n    justifyContent: "center",\n    marginBottom: "150px",\n}); });\nvar FormTitle = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"])(function () { return ({\n    fontSize: "37px",\n    fontWeight: 500,\n    marginBottom: "46px",\n}); });\nvar RadioLayout = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"])(function () { return ({\n    width: "100%",\n    display: "flex",\n    flexDirection: "column",\n    alignItems: "start",\n    marginBottom: "62px",\n}); });\nvar FormLoginField = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"])(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n  width: 100%;\\n  margin-bottom: 18px;\\n  & .MuiInputBase-root {\\n    border-radius: 19px;\\n  }\\n  &:hover fieldset {\\n    border-radius: 19px;\\n    border: 2px solid #a6a6a6;\\n  }\\n  &:focus-within fieldset,\\n  &:focus-visible fieldset {\\n    border-radius: 19px;\\n    border: 2px solid #a6a6a6;\\n  }\\n"], ["\\n  width: 100%;\\n  margin-bottom: 18px;\\n  & .MuiInputBase-root {\\n    border-radius: 19px;\\n  }\\n  &:hover fieldset {\\n    border-radius: 19px;\\n    border: 2px solid #a6a6a6;\\n  }\\n  &:focus-within fieldset,\\n  &:focus-visible fieldset {\\n    border-radius: 19px;\\n    border: 2px solid #a6a6a6;\\n  }\\n"])));\nvar templateObject_1;\n\n\n//# sourceURL=webpack://test/./src/components/login-page/LoginForm/styles.ts?'
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FormLoginField: () => (/* binding */ FormLoginField)\n/* harmony export */ });\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/styled.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/TextField/TextField.js");\nvar __makeTemplateObject = (undefined && undefined.__makeTemplateObject) || function (cooked, raw) {\n    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }\n    return cooked;\n};\n\nvar FormLoginField = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"])(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n  width: 100%;\\n  margin-bottom: 18px;\\n  & .MuiInputBase-root {\\n    border-radius: 19px;\\n  }\\n  &:hover fieldset {\\n    border-radius: 19px;\\n    border: 2px solid #a6a6a6;\\n  }\\n  &:focus-within fieldset,\\n  &:focus-visible fieldset {\\n    border-radius: 19px;\\n    border: 2px solid #a6a6a6;\\n  }\\n"], ["\\n  width: 100%;\\n  margin-bottom: 18px;\\n  & .MuiInputBase-root {\\n    border-radius: 19px;\\n  }\\n  &:hover fieldset {\\n    border-radius: 19px;\\n    border: 2px solid #a6a6a6;\\n  }\\n  &:focus-within fieldset,\\n  &:focus-visible fieldset {\\n    border-radius: 19px;\\n    border: 2px solid #a6a6a6;\\n  }\\n"])));\nvar templateObject_1;\n\n\n//# sourceURL=webpack://test/./src/components/login-page/LoginForm/styles.ts?'
         );
 
         /***/
@@ -4229,7 +4297,7 @@
       ) => {
         "use strict";
         eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.mjs");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/FormControlLabel/FormControlLabel.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Radio/Radio.js");\n/* harmony import */ var _LoginForm_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../LoginForm/styles */ "./src/components/login-page/LoginForm/styles.ts");\n\n\n\n\nvar options = [\n    {\n        label: "Я продавец",\n        value: "seller",\n    },\n    {\n        label: "Я покупатель",\n        value: "buyer",\n    },\n];\nvar RadioList = function (_a) {\n    var name = _a.name, control = _a.control;\n    var generateRadioOptions = function () {\n        return options.map(function (option) { return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], { key: option.value, control: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], { disableRipple: true }), value: option.value, label: option.label })); });\n    };\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_hook_form__WEBPACK_IMPORTED_MODULE_4__.Controller, { name: name, control: control, defaultValue: "", render: function (_a) {\n            var _b = _a.field, onChange = _b.onChange, value = _b.value;\n            return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_LoginForm_styles__WEBPACK_IMPORTED_MODULE_1__.RadioLayout, { value: value, onChange: function (e) { return onChange(e); } }, generateRadioOptions()));\n        } }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RadioList);\n\n\n//# sourceURL=webpack://test/./src/components/login-page/RadioList/RadioList.tsx?'
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.mjs");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/FormControlLabel/FormControlLabel.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Radio/Radio.js");\n/* harmony import */ var _mocks_LoginRadioOptions_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../mocks/LoginRadioOptions.json */ "./src/mocks/LoginRadioOptions.json");\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles */ "./src/components/login-page/RadioList/styles.ts");\n\n\n\n\n\nvar RadioList = function (_a) {\n    var name = _a.name, control = _a.control;\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_hook_form__WEBPACK_IMPORTED_MODULE_3__.Controller, { name: name, control: control, defaultValue: "", render: function (_a) {\n            var _b = _a.field, onChange = _b.onChange, value = _b.value;\n            return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles__WEBPACK_IMPORTED_MODULE_2__.RadioLayout, { value: value, onChange: function (e) { return onChange(e); } }, _mocks_LoginRadioOptions_json__WEBPACK_IMPORTED_MODULE_1__.map(function (option) { return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], { key: option.value, control: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { disableRipple: true }), value: option.value, label: option.label })); })));\n        } }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RadioList);\n\n\n//# sourceURL=webpack://test/./src/components/login-page/RadioList/RadioList.tsx?'
         );
 
         /***/
@@ -4252,6 +4320,57 @@
         /***/
       },
 
+    /***/ "./src/components/login-page/RadioList/styles.ts":
+      /*!*******************************************************!*\
+  !*** ./src/components/login-page/RadioList/styles.ts ***!
+  \*******************************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   RadioLayout: () => (/* binding */ RadioLayout)\n/* harmony export */ });\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/styled.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/RadioGroup/RadioGroup.js");\n\nvar RadioLayout = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"])(function () { return ({\n    width: "100%",\n    display: "flex",\n    flexDirection: "column",\n    alignItems: "start",\n    marginBottom: "62px",\n}); });\n\n\n//# sourceURL=webpack://test/./src/components/login-page/RadioList/styles.ts?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/components/login-page/SellerForm/SellerForm.tsx":
+      /*!*************************************************************!*\
+  !*** ./src/components/login-page/SellerForm/SellerForm.tsx ***!
+  \*************************************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mocks_SellerLoginFields_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../mocks/SellerLoginFields.json */ "./src/mocks/SellerLoginFields.json");\n/* harmony import */ var _FormField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../FormField */ "./src/components/login-page/FormField/index.ts");\n/* harmony import */ var _styles_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/components */ "./src/styles/components.ts");\nvar __assign = (undefined && undefined.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\n\n\n\n\nvar SellerForm = function (_a) {\n    var errors = _a.errors, control = _a.control;\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_3__.ClientFormLayout, null, _mocks_SellerLoginFields_json__WEBPACK_IMPORTED_MODULE_1__.map(function (option) {\n        var _a;\n        return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_FormField__WEBPACK_IMPORTED_MODULE_2__.FormField, __assign({ key: option.name, control: control, helperText: (_a = errors === null || errors === void 0 ? void 0 : errors[option.name]) === null || _a === void 0 ? void 0 : _a.message, error: !!(errors === null || errors === void 0 ? void 0 : errors[option.name]) }, option)));\n    })));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SellerForm);\n\n\n//# sourceURL=webpack://test/./src/components/login-page/SellerForm/SellerForm.tsx?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/components/login-page/SellerForm/index.ts":
+      /*!*******************************************************!*\
+  !*** ./src/components/login-page/SellerForm/index.ts ***!
+  \*******************************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   SellerForm: () => (/* reexport safe */ _SellerForm__WEBPACK_IMPORTED_MODULE_0__["default"])\n/* harmony export */ });\n/* harmony import */ var _SellerForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SellerForm */ "./src/components/login-page/SellerForm/SellerForm.tsx");\n\n\n\n//# sourceURL=webpack://test/./src/components/login-page/SellerForm/index.ts?'
+        );
+
+        /***/
+      },
+
     /***/ "./src/index.tsx":
       /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -4269,6 +4388,91 @@
         /***/
       },
 
+    /***/ "./src/layouts/LoginFormLayout/LoginFormLayout.tsx":
+      /*!*********************************************************!*\
+  !*** ./src/layouts/LoginFormLayout/LoginFormLayout.tsx ***!
+  \*********************************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/components */ "./src/styles/components.ts");\n/* harmony import */ var _styles_mainForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/mainForm */ "./src/styles/mainForm.ts");\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles */ "./src/layouts/LoginFormLayout/styles.ts");\n\n\n\n\nvar LoginFormLayout = function (_a) {\n    var children = _a.children, handleSubmit = _a.handleSubmit, onSubmit = _a.onSubmit;\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles__WEBPACK_IMPORTED_MODULE_3__.FormLoginLayout, null,\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles__WEBPACK_IMPORTED_MODULE_3__.FormTitle, { color: "#353535", variant: "h1" }, "\\u041F\\u0440\\u0438\\u0441\\u043E\\u0435\\u0434\\u0438\\u043D\\u044F\\u0439\\u0441\\u044F \\u043A SunRay!"),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_mainForm__WEBPACK_IMPORTED_MODULE_2__.MainForm, { onSubmit: handleSubmit(onSubmit) },\n            children,\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_components__WEBPACK_IMPORTED_MODULE_1__.BigButton, { variant: "contained", color: "primary", type: "submit" }, "\\u0414\\u0430\\u043B\\u0435\\u0435"))));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LoginFormLayout);\n\n\n//# sourceURL=webpack://test/./src/layouts/LoginFormLayout/LoginFormLayout.tsx?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/layouts/LoginFormLayout/index.ts":
+      /*!**********************************************!*\
+  !*** ./src/layouts/LoginFormLayout/index.ts ***!
+  \**********************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   LoginFormLayout: () => (/* reexport safe */ _LoginFormLayout__WEBPACK_IMPORTED_MODULE_0__["default"])\n/* harmony export */ });\n/* harmony import */ var _LoginFormLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoginFormLayout */ "./src/layouts/LoginFormLayout/LoginFormLayout.tsx");\n\n\n\n//# sourceURL=webpack://test/./src/layouts/LoginFormLayout/index.ts?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/layouts/LoginFormLayout/styles.ts":
+      /*!***********************************************!*\
+  !*** ./src/layouts/LoginFormLayout/styles.ts ***!
+  \***********************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FormLoginLayout: () => (/* binding */ FormLoginLayout),\n/* harmony export */   FormTitle: () => (/* binding */ FormTitle)\n/* harmony export */ });\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/styled.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Typography/Typography.js");\n\nvar FormLoginLayout = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"])(function () { return ({\n    width: "74%",\n    margin: "0 auto",\n    padding: "80px 90px 122px 90px",\n    borderRadius: "60px",\n    border: "2px solid #F2F2F2",\n    background: "#fff",\n    boxShadow: "12px 9px 77px 0px rgba(53, 53, 53, 0.05)",\n    display: "flex",\n    flexDirection: "column",\n    alignItems: "center",\n    justifyContent: "center",\n    marginBottom: "150px",\n}); });\nvar FormTitle = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"])(function () { return ({\n    fontSize: "37px",\n    fontWeight: 500,\n    marginBottom: "46px",\n}); });\n\n\n//# sourceURL=webpack://test/./src/layouts/LoginFormLayout/styles.ts?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/pages/Login/Login.tsx":
+      /*!***********************************!*\
+  !*** ./src/pages/Login/Login.tsx ***!
+  \***********************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_login_page_HeaderForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/login-page/HeaderForm */ "./src/components/login-page/HeaderForm/index.ts");\n/* harmony import */ var _components_login_page_LoginForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/login-page/LoginForm */ "./src/components/login-page/LoginForm/index.ts");\n\n\n\nvar Login = function () { return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null,\n    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_login_page_HeaderForm__WEBPACK_IMPORTED_MODULE_1__.HeaderForm, null),\n    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_login_page_LoginForm__WEBPACK_IMPORTED_MODULE_2__.LoginForm, null))); };\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Login);\n\n\n//# sourceURL=webpack://test/./src/pages/Login/Login.tsx?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/pages/Login/index.ts":
+      /*!**********************************!*\
+  !*** ./src/pages/Login/index.ts ***!
+  \**********************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Login: () => (/* reexport safe */ _Login__WEBPACK_IMPORTED_MODULE_0__["default"])\n/* harmony export */ });\n/* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Login */ "./src/pages/Login/Login.tsx");\n\n\n\n//# sourceURL=webpack://test/./src/pages/Login/index.ts?'
+        );
+
+        /***/
+      },
+
     /***/ "./src/styles/components.ts":
       /*!**********************************!*\
   !*** ./src/styles/components.ts ***!
@@ -4280,7 +4484,7 @@
       ) => {
         "use strict";
         eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   BigButton: () => (/* binding */ BigButton),\n/* harmony export */   HeaderContainer: () => (/* binding */ HeaderContainer),\n/* harmony export */   SiteContainer: () => (/* binding */ SiteContainer),\n/* harmony export */   SmallButton: () => (/* binding */ SmallButton),\n/* harmony export */   Wrapper: () => (/* binding */ Wrapper)\n/* harmony export */ });\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/styled.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Container/Container.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Button/Button.js");\n\nvar Wrapper = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"])(function () { return ({\n    display: "flex",\n    flexDirection: "column",\n    minHeight: "100vh",\n    overflow: "hidden",\n}); });\nvar SiteContainer = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"])(function () { return ({\n    maxWidth: "1200px",\n}); });\nvar HeaderContainer = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(SiteContainer)(function () { return ({\n    display: "flex",\n    alignItems: "center",\n    justifyContent: "space-between",\n    padding: "30px 0",\n}); });\nvar SmallButton = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"])(function () { return ({\n    borderRadius: "16px",\n    fontSize: "21px",\n    fontWeight: 600,\n    lineHeight: "normal",\n    textTransform: "none",\n    color: "#fff",\n    padding: "10px 41px",\n}); });\nvar BigButton = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"])(function () { return ({\n    width: "100%",\n    maxWidth: "476px",\n    borderRadius: "16px",\n    fontSize: "29px",\n    fontWeight: 600,\n    lineHeight: "normal",\n    textTransform: "none",\n    color: "#fff",\n    padding: "19px 0px",\n}); });\n\n\n//# sourceURL=webpack://test/./src/styles/components.ts?'
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   BigButton: () => (/* binding */ BigButton),\n/* harmony export */   ClientFormLayout: () => (/* binding */ ClientFormLayout),\n/* harmony export */   HeaderContainer: () => (/* binding */ HeaderContainer),\n/* harmony export */   SiteContainer: () => (/* binding */ SiteContainer),\n/* harmony export */   SmallButton: () => (/* binding */ SmallButton),\n/* harmony export */   Wrapper: () => (/* binding */ Wrapper)\n/* harmony export */ });\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/styled.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Container/Container.js");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Button/Button.js");\n\nvar Wrapper = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"])(function () { return ({\n    display: "flex",\n    flexDirection: "column",\n    minHeight: "100vh",\n    overflow: "hidden",\n}); });\nvar SiteContainer = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"])(function () { return ({\n    maxWidth: "1200px",\n}); });\nvar HeaderContainer = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(SiteContainer)(function () { return ({\n    display: "flex",\n    alignItems: "center",\n    justifyContent: "space-between",\n    padding: "30px 0",\n}); });\nvar SmallButton = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"])(function () { return ({\n    borderRadius: "16px",\n    fontSize: "21px",\n    fontWeight: 600,\n    lineHeight: "normal",\n    textTransform: "none",\n    color: "#fff",\n    padding: "10px 41px",\n}); });\nvar BigButton = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"])(function () { return ({\n    width: "100%",\n    maxWidth: "476px",\n    borderRadius: "16px",\n    fontSize: "29px",\n    fontWeight: 600,\n    lineHeight: "normal",\n    textTransform: "none",\n    color: "#fff",\n    padding: "19px 0px",\n}); });\nvar ClientFormLayout = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"])(function () { return ({\n    marginBottom: "51px",\n}); });\n\n\n//# sourceURL=webpack://test/./src/styles/components.ts?'
         );
 
         /***/
@@ -4303,6 +4507,23 @@
         /***/
       },
 
+    /***/ "./src/styles/mainForm.ts":
+      /*!********************************!*\
+  !*** ./src/styles/mainForm.ts ***!
+  \********************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   MainForm: () => (/* binding */ MainForm)\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");\nvar __makeTemplateObject = (undefined && undefined.__makeTemplateObject) || function (cooked, raw) {\n    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }\n    return cooked;\n};\n\nvar MainForm = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].form(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\\n  width: 100%;\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n"], ["\\n  width: 100%;\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n"])));\nvar templateObject_1;\n\n\n//# sourceURL=webpack://test/./src/styles/mainForm.ts?'
+        );
+
+        /***/
+      },
+
     /***/ "./src/styles/theme.ts":
       /*!*****************************!*\
   !*** ./src/styles/theme.ts ***!
@@ -4315,6 +4536,23 @@
         "use strict";
         eval(
           '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   theme: () => (/* binding */ theme)\n/* harmony export */ });\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/styles/createTheme.js");\n\nvar theme = (0,_mui_material__WEBPACK_IMPORTED_MODULE_0__["default"])({\n    typography: {\n        fontFamily: ["Roboto Slab", "serif"].join(","),\n    },\n    palette: {\n        primary: {\n            main: "#eda338",\n            dark: "#e78800",\n        },\n        secondary: {\n            main: "#353535",\n        },\n    },\n    components: {\n        MuiButton: {\n            defaultProps: {\n                disableRipple: true,\n                disableElevation: true,\n            },\n        },\n        MuiFormControlLabel: {\n            styleOverrides: {\n                label: {\n                    color: "#353535",\n                    fontSize: "23px",\n                },\n            },\n        },\n    },\n});\n\n\n//# sourceURL=webpack://test/./src/styles/theme.ts?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/utils/schems/LoginFormSchems.ts":
+      /*!*********************************************!*\
+  !*** ./src/utils/schems/LoginFormSchems.ts ***!
+  \*********************************************/
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        "use strict";
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loginFormSchema: () => (/* binding */ loginFormSchema)\n/* harmony export */ });\n/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! yup */ "./node_modules/yup/index.esm.js");\n\nvar loginFormSchema = yup__WEBPACK_IMPORTED_MODULE_0__.object().shape({\n    status: yup__WEBPACK_IMPORTED_MODULE_0__.string().required("Это обязательное поле!"),\n    name: yup__WEBPACK_IMPORTED_MODULE_0__.string().required("Это обязательное поле!"),\n    lastName: yup__WEBPACK_IMPORTED_MODULE_0__.string().required("Это обязательное поле!"),\n    password: yup__WEBPACK_IMPORTED_MODULE_0__.string()\n        .required("Это обязательное поле!")\n        .min(8, "Пароль должен быть не менее 8 символов"),\n    number: yup__WEBPACK_IMPORTED_MODULE_0__.string().when("status", {\n        is: "buyer",\n        then: function (schema) { return schema.required("Это обязательное поле!"); },\n    }),\n    email: yup__WEBPACK_IMPORTED_MODULE_0__.string().when("status", {\n        is: "buyer",\n        then: function (schema) {\n            return schema.required("Это обязательное поле!").email("Некорректный email");\n        },\n    }),\n    companyName: yup__WEBPACK_IMPORTED_MODULE_0__.string().when("status", {\n        is: "seller",\n        then: function (schema) { return schema.required("Это обязательное поле!"); },\n    }),\n    inn: yup__WEBPACK_IMPORTED_MODULE_0__.string().when("status", {\n        is: "seller",\n        then: function (schema) { return schema.required("Это обязательное поле!"); },\n    }),\n});\n\n\n//# sourceURL=webpack://test/./src/utils/schems/LoginFormSchems.ts?'
         );
 
         /***/
@@ -4723,6 +4961,32 @@
         "use strict";
         eval(
           "__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   abs: () => (/* binding */ abs),\n/* harmony export */   append: () => (/* binding */ append),\n/* harmony export */   assign: () => (/* binding */ assign),\n/* harmony export */   charat: () => (/* binding */ charat),\n/* harmony export */   combine: () => (/* binding */ combine),\n/* harmony export */   from: () => (/* binding */ from),\n/* harmony export */   hash: () => (/* binding */ hash),\n/* harmony export */   indexof: () => (/* binding */ indexof),\n/* harmony export */   match: () => (/* binding */ match),\n/* harmony export */   replace: () => (/* binding */ replace),\n/* harmony export */   sizeof: () => (/* binding */ sizeof),\n/* harmony export */   strlen: () => (/* binding */ strlen),\n/* harmony export */   substr: () => (/* binding */ substr),\n/* harmony export */   trim: () => (/* binding */ trim)\n/* harmony export */ });\n/**\n * @param {number}\n * @return {number}\n */\nvar abs = Math.abs\n\n/**\n * @param {number}\n * @return {string}\n */\nvar from = String.fromCharCode\n\n/**\n * @param {object}\n * @return {object}\n */\nvar assign = Object.assign\n\n/**\n * @param {string} value\n * @param {number} length\n * @return {number}\n */\nfunction hash (value, length) {\n\treturn charat(value, 0) ^ 45 ? (((((((length << 2) ^ charat(value, 0)) << 2) ^ charat(value, 1)) << 2) ^ charat(value, 2)) << 2) ^ charat(value, 3) : 0\n}\n\n/**\n * @param {string} value\n * @return {string}\n */\nfunction trim (value) {\n\treturn value.trim()\n}\n\n/**\n * @param {string} value\n * @param {RegExp} pattern\n * @return {string?}\n */\nfunction match (value, pattern) {\n\treturn (value = pattern.exec(value)) ? value[0] : value\n}\n\n/**\n * @param {string} value\n * @param {(string|RegExp)} pattern\n * @param {string} replacement\n * @return {string}\n */\nfunction replace (value, pattern, replacement) {\n\treturn value.replace(pattern, replacement)\n}\n\n/**\n * @param {string} value\n * @param {string} search\n * @return {number}\n */\nfunction indexof (value, search) {\n\treturn value.indexOf(search)\n}\n\n/**\n * @param {string} value\n * @param {number} index\n * @return {number}\n */\nfunction charat (value, index) {\n\treturn value.charCodeAt(index) | 0\n}\n\n/**\n * @param {string} value\n * @param {number} begin\n * @param {number} end\n * @return {string}\n */\nfunction substr (value, begin, end) {\n\treturn value.slice(begin, end)\n}\n\n/**\n * @param {string} value\n * @return {number}\n */\nfunction strlen (value) {\n\treturn value.length\n}\n\n/**\n * @param {any[]} value\n * @return {number}\n */\nfunction sizeof (value) {\n\treturn value.length\n}\n\n/**\n * @param {any} value\n * @param {any[]} array\n * @return {any}\n */\nfunction append (value, array) {\n\treturn array.push(value), value\n}\n\n/**\n * @param {string[]} array\n * @param {function} callback\n * @return {string}\n */\nfunction combine (array, callback) {\n\treturn array.map(callback).join('')\n}\n\n\n//# sourceURL=webpack://test/./node_modules/stylis/src/Utility.js?"
+        );
+
+        /***/
+      },
+
+    /***/ "./src/mocks/LoginRadioOptions.json":
+      /*!******************************************!*\
+  !*** ./src/mocks/LoginRadioOptions.json ***!
+  \******************************************/
+      /***/ (module) => {
+        "use strict";
+        eval(
+          'module.exports = JSON.parse(\'[{"label":"Я продавец","value":"seller"},{"label":"Я покупатель","value":"buyer"}]\');\n\n//# sourceURL=webpack://test/./src/mocks/LoginRadioOptions.json?'
+        );
+
+        /***/
+      },
+
+    /***/ "./src/mocks/SellerLoginFields.json":
+      /*!******************************************!*\
+  !*** ./src/mocks/SellerLoginFields.json ***!
+  \******************************************/
+      /***/ (module) => {
+        "use strict";
+        eval(
+          'module.exports = JSON.parse(\'[{"label":"Имя","name":"name","type":"text","required":true},{"label":"Фамилия","name":"lastName","type":"text","required":true},{"label":"Отчество","name":"middleName","type":"text","required":false},{"label":"Название ИП","name":"companyName","type":"text","required":true},{"label":"ИНН","name":"inn","type":"text","required":true},{"label":"Пароль","name":"password","type":"password","required":true}]\');\n\n//# sourceURL=webpack://test/./src/mocks/SellerLoginFields.json?'
         );
 
         /***/

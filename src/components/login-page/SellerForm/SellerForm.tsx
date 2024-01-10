@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 import { FieldErrors } from "react-hook-form";
 
-import { TKeyError } from "../../../models/TKeyError";
-import sellerFormFieldsData from "../../../mocks/SellerLoginFields.json";
-import { TSellerLoginFormData } from "../../../models/LoginFormData";
+import { TKeyError } from "@/models/TKeyError";
+import sellerFormFieldsData from "@/mocks/SellerLoginFields.json";
+import { TSellerLoginFormData } from "@/models/LoginFormData";
 
 import { FormField } from "../FormField";
 
-import { ClientFormLayout } from "../../../styles/components";
+import { ClientFormLayout } from "@/styles/components";
 
 interface ISellerFormProps {
   errors: FieldErrors<TSellerLoginFormData>;

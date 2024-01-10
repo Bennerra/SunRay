@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { Controller, FieldPath } from "react-hook-form";
 import { FormControlLabel, Radio } from "@mui/material";
 
-import radioOptions from "../../../mocks/LoginRadioOptions.json";
+import radioOptions from "@/mocks/LoginRadioOptions.json";
 
 import { RadioLayout } from "./styles";
 

@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 
-import { SmallButton, HeaderContainer } from "../../../styles/components";
+import { SmallButton, HeaderContainer } from "@/styles/components";
 import { HeaderLayout } from "./styles";
 
-import Logo from "../../../assets/logo.svg";
+import Logo from "@/assets/logo.svg";
 
 const HeaderForm: FC = () => (
   <HeaderLayout>

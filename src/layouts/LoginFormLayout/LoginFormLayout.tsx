@@ -7,10 +7,10 @@ import {
 import {
   TBuyerLoginFormData,
   TSellerLoginFormData,
-} from "../../models/LoginFormData";
+} from "@/models/LoginFormData";
 
-import { BigButton } from "../../styles/components";
-import { MainForm } from "../../styles/mainForm";
+import { BigButton } from "@/styles/components";
+import { MainForm } from "@/styles/mainForm";
 import { FormLoginLayout, FormTitle } from "./styles";
 
 interface ILoginFormLayoutProps {

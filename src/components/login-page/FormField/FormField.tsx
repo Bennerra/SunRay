@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Controller, FieldPath } from "react-hook-form";
 
-import { FormLoginField } from "../LoginForm/styles";
+import { FormLoginField } from "./styles";
 
 interface IFormFieldProps {
   name: FieldPath<any>;

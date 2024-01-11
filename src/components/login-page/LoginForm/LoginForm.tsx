@@ -22,6 +22,7 @@ const LoginForm: FC = () => {
     control,
     handleSubmit,
     watch,
+    resetField,
     formState: { errors },
   } = useForm<TBuyerLoginFormData | TSellerLoginFormData>({
     mode: "onBlur",
@@ -36,6 +37,13 @@ const LoginForm: FC = () => {
   useEffect(() => {
     setStatus(watch("status"));
   });
+
+  useEffect(() => {
+    resetField("email");
+    resetField("number");
+    resetField("inn");
+    resetField("companyName");
+  }, [status]);
 
   return (
     <>

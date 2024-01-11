@@ -1,4 +1,3 @@
-craco.config.ts
 node_modules
 webpack.*
 public

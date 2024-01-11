@@ -1,6 +1,16 @@
 import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 576,
+      sm: 768,
+      md: 992,
+      lg: 1200,
+      xl: 1600,
+    },
+  },
+
   typography: {
     fontFamily: ["Roboto Slab", "serif"].join(","),
   },
@@ -18,14 +28,6 @@ export const theme = createTheme({
       defaultProps: {
         disableRipple: true,
         disableElevation: true,
-      },
-    },
-    MuiFormControlLabel: {
-      styleOverrides: {
-        label: {
-          color: "#353535",
-          fontSize: "23px",
-        },
       },
     },
   },

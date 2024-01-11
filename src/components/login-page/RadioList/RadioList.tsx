@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { Controller, FieldPath } from "react-hook-form";
-import { FormControlLabel, Radio } from "@mui/material";
+import { Radio } from "@mui/material";
 
 import radioOptions from "@/mocks/LoginRadioOptions.json";
 
-import { RadioLayout } from "./styles";
+import { RadioLabel, RadioLayout } from "./styles";
 
 interface IFormProps {
   name: FieldPath<any>;
@@ -19,7 +19,7 @@ const RadioList: FC<IFormProps> = ({ name, control }) => (
     render={({ field: { onChange, value } }) => (
       <RadioLayout value={value} onChange={(e) => onChange(e)}>
         {radioOptions.map((option) => (
-          <FormControlLabel
+          <RadioLabel
             key={option.value}
             control={<Radio disableRipple />}
             value={option.value}

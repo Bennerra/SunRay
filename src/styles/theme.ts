@@ -10,7 +10,6 @@ export const theme = createTheme({
       xl: 1600,
     },
   },
-
   typography: {
     fontFamily: ["Roboto Slab", "serif"].join(","),
   },
@@ -21,6 +20,10 @@ export const theme = createTheme({
     },
     secondary: {
       main: "#353535",
+      light: "#a6a6a6",
+    },
+    background: {
+      default: "#fff",
     },
   },
   components: {

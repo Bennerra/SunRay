@@ -23,13 +23,13 @@ export const HeaderContainer = styled(SiteContainer)(() => ({
   },
 }));
 
-export const SmallButton = styled(Button)(() => ({
+export const SmallButton = styled(Button)(({ theme }) => ({
   borderRadius: "16px",
   fontSize: "21px",
   fontWeight: 600,
   lineHeight: "normal",
   textTransform: "none",
-  color: "#fff",
+  color: theme.palette.background.default,
   padding: "10px 41px",
   [theme.breakpoints.down("sm")]: {
     padding: "7px 20px",
@@ -38,7 +38,7 @@ export const SmallButton = styled(Button)(() => ({
   },
 }));
 
-export const BigButton = styled(Button)(() => ({
+export const BigButton = styled(Button)(({ theme }) => ({
   width: "100%",
   maxWidth: "476px",
   borderRadius: "16px",
@@ -46,7 +46,7 @@ export const BigButton = styled(Button)(() => ({
   fontWeight: 600,
   lineHeight: "normal",
   textTransform: "none",
-  color: "#fff",
+  color: theme.palette.background.default,
   padding: "19px 0px",
   [theme.breakpoints.down("sm")]: {
     padding: "10px 0",

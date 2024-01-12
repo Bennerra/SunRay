@@ -4,14 +4,15 @@ import { Radio } from "@mui/material";
 
 import radioOptions from "@/mocks/LoginRadioOptions.json";
 
-import { RadioLabel, RadioLayout } from "./styles";
+import { RadioLabel, RadioLayout, TextError } from "./styles";
 
 interface IFormProps {
   name: FieldPath<any>;
   control: any;
+  helperText: string | undefined;
 }
 
-const RadioList: FC<IFormProps> = ({ name, control }) => (
+const RadioList: FC<IFormProps> = ({ name, control, helperText }) => (
   <Controller
     name={name}
     control={control}
@@ -26,6 +27,7 @@ const RadioList: FC<IFormProps> = ({ name, control }) => (
             label={option.label}
           />
         ))}
+        {helperText && <TextError>{helperText}</TextError>}
       </RadioLayout>
     )}
   />

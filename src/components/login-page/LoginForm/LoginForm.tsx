@@ -51,7 +51,11 @@ const LoginForm: FC = () => {
     <>
       <SiteContainer>
         <LoginFormLayout handleSubmit={handleSubmit} onSubmit={onSubmit}>
-          <RadioList name="status" control={control} />
+          <RadioList
+            helperText={errors?.status?.message}
+            name="status"
+            control={control}
+          />
           {status === "buyer" && (
             <BuyerForm errors={errors} control={control} />
           )}

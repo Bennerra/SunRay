@@ -1,13 +1,13 @@
 import { Box, styled, Typography } from "@mui/material";
 import { theme } from "@/styles/theme";
 
-export const FormLoginLayout = styled(Box)(() => ({
+export const FormLoginLayout = styled(Box)(({ theme }) => ({
   width: "74%",
   margin: "0 auto",
   padding: "80px 90px 122px 90px",
   borderRadius: "60px",
   border: "2px solid #F2F2F2",
-  background: "#fff",
+  background: theme.palette.background.default,
   boxShadow: "12px 9px 77px 0px rgba(53, 53, 53, 0.05)",
   display: "flex",
   flexDirection: "column",

@@ -1,4 +1,9 @@
-import { FormControlLabel, RadioGroup, styled } from "@mui/material";
+import {
+  FormControlLabel,
+  RadioGroup,
+  styled,
+  Typography,
+} from "@mui/material";
 import { theme } from "@/styles/theme";
 
 export const RadioLayout = styled(RadioGroup)(() => ({
@@ -15,9 +20,9 @@ export const RadioLayout = styled(RadioGroup)(() => ({
   },
 }));
 
-export const RadioLabel = styled(FormControlLabel)(() => ({
+export const RadioLabel = styled(FormControlLabel)(({ theme }) => ({
   ["& .MuiTypography-root"]: {
-    color: "#353535",
+    color: theme.palette.secondary.main,
     fontSize: "23px",
     lineHeight: "1",
     [theme.breakpoints.down("sm")]: {
@@ -33,4 +38,12 @@ export const RadioLabel = styled(FormControlLabel)(() => ({
       width: "0.8em",
     },
   },
+}));
+
+export const TextError = styled(Typography)(({ theme }) => ({
+  color: theme.palette.error.main,
+  fontWeight: 400,
+  fontSize: "12px",
+  lineHeight: 1.66,
+  marginTop: "5px",
 }));

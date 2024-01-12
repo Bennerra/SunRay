@@ -1,9 +1,8 @@
 import { Box, styled } from "@mui/material";
-import { theme } from "@/styles/theme";
 
-export const HeaderLayout = styled(Box)(() => ({
+export const HeaderLayout = styled(Box)(({ theme }) => ({
   width: "100%",
-  background: "#fff",
+  background: theme.palette.background.default,
   boxShadow: "0px 4px 101px 0px rgba(53, 53, 53, 0.06)",
   marginBottom: "93px",
   [theme.breakpoints.down("sm")]: {

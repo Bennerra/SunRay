@@ -40,7 +40,15 @@ const LoginForm: FC = () => {
   });
 
   useEffect(() => {
-    const arr = ["email", "number", "inn", "companyName"];
+    const arr = [
+      "email",
+      "number",
+      "inn",
+      "companyName",
+      "name",
+      "lastName",
+      "password",
+    ];
 
     arr.forEach((name: field) => {
       resetField(name);

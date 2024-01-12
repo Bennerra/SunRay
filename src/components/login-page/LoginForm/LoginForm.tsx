@@ -7,6 +7,7 @@ import {
   TSellerLoginFormData,
 } from "@/models/LoginFormData";
 import { loginFormSchema } from "@/utils/schems/LoginFormSchems";
+import { field } from "./types";
 
 import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
@@ -39,10 +40,11 @@ const LoginForm: FC = () => {
   });
 
   useEffect(() => {
-    resetField("email");
-    resetField("number");
-    resetField("inn");
-    resetField("companyName");
+    const arr = ["email", "number", "inn", "companyName"];
+
+    arr.forEach((name: field) => {
+      resetField(name);
+    });
   }, [status]);
 
   return (

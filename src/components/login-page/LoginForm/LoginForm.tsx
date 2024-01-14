@@ -15,9 +15,12 @@ import { SellerForm } from "../SellerForm";
 
 import { SiteContainer } from "@/styles/components";
 import { LoginFormLayout } from "@/layouts/LoginFormLayout";
+import { useAppDispatch } from "@/hooks/redux";
+import { addUser } from "@/store/userSlice";
 
 const LoginForm: FC = () => {
   const [status, setStatus] = useState("");
+  const dispatch = useAppDispatch();
 
   const {
     control,
@@ -31,8 +34,7 @@ const LoginForm: FC = () => {
   });
 
   const onSubmit = (data: TBuyerLoginFormData | TSellerLoginFormData) => {
-    // eslint-disable-next-line no-console
-    console.log(data);
+    dispatch(addUser(data));
   };
 
   useEffect(() => {

@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 
 import {
   TBuyerLoginFormData,
+  TFormData,
   TSellerLoginFormData,
 } from "@/models/LoginFormData";
 import { loginFormSchema } from "@/utils/schems/LoginFormSchems";
@@ -28,7 +29,7 @@ const LoginForm: FC = () => {
     watch,
     resetField,
     formState: { errors },
-  } = useForm<TBuyerLoginFormData | TSellerLoginFormData>({
+  } = useForm<TFormData>({
     mode: "onBlur",
     resolver: yupResolver(loginFormSchema) as any,
   });

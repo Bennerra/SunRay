@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import { FieldErrors } from "react-hook-form";
+import { Control, FieldErrors } from "react-hook-form";
 
 import { TKeyError } from "@/models/TKeyError";
 import sellerFormFieldsData from "@/mocks/SellerLoginFields.json";
-import { TSellerLoginFormData } from "@/models/LoginFormData";
+import { TFormData, TSellerLoginFormData } from "@/models/LoginFormData";
 
 import { FormField } from "../FormField";
 
@@ -11,7 +11,7 @@ import { ClientFormLayout } from "@/styles/components";
 
 interface ISellerFormProps {
   errors: FieldErrors<TSellerLoginFormData>;
-  control: any;
+  control: Control<TFormData>;
 }
 
 const SellerForm: FC<ISellerFormProps> = ({ errors, control }) => (

@@ -15,3 +15,15 @@ export type TSellerLoginFormData = TBaseFormData & {
   companyName: string;
   inn: string;
 };
+
+export type TFormData = {
+  name: string;
+  lastName: string;
+  middleName?: string;
+  password: string;
+  status: string;
+  number: string;
+  email: string;
+  companyName: string;
+  inn: string;
+};

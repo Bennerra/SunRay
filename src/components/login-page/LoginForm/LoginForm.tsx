@@ -2,13 +2,10 @@ import React, { FC, useEffect, useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
-import {
-  TBuyerLoginFormData,
-  TFormData,
-  TSellerLoginFormData,
-} from "@/models/LoginFormData";
-import { loginFormSchema } from "@/utils/schems/LoginFormSchems";
+import { TBuyerLoginFormData, TFormData } from "@/models/LoginFormData";
+import { loginFormSchema } from "../../../utils/schemes/LoginFormSchems";
 import { field } from "./types";
+import resetFields from "@/mocks/ResetFields.json";
 
 import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
@@ -17,7 +14,9 @@ import { SellerForm } from "../SellerForm";
 import { SiteContainer } from "@/styles/components";
 import { LoginFormLayout } from "@/layouts/LoginFormLayout";
 import { useAppDispatch } from "@/hooks/redux";
-import { addUser } from "@/store/userSlice";
+import { addBuyerUser } from "@/store/userSlice";
+import { addUser } from "@/api/addUser";
+import { defineUser } from "../../../utils/defineUser";
 
 const LoginForm: FC = () => {
   const [status, setStatus] = useState("");
@@ -34,8 +33,18 @@ const LoginForm: FC = () => {
     resolver: yupResolver(loginFormSchema) as any,
   });
 
-  const onSubmit = (data: TBuyerLoginFormData | TSellerLoginFormData) => {
-    dispatch(addUser(data));
+  const onSubmit = async (data: TBuyerLoginFormData) => {
+    const user = defineUser(data);
+    try {
+      dispatch(addBuyerUser(user));
+      await addUser(user);
+
+      // eslint-disable-next-line no-console
+      console.log(data);
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.log(error);
+    }
   };
 
   useEffect(() => {
@@ -43,17 +52,7 @@ const LoginForm: FC = () => {
   });
 
   useEffect(() => {
-    const arr = [
-      "email",
-      "number",
-      "inn",
-      "companyName",
-      "name",
-      "lastName",
-      "password",
-    ];
-
-    arr.forEach((name: field) => {
+    resetFields.forEach((name: field) => {
       resetField(name);
     });
   }, [status]);

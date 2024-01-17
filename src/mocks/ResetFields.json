@@ -1,0 +1,16 @@
+[
+  "username",
+  "city",
+  "street",
+  "flat",
+  "lat",
+  "long",
+  "zipcode",
+  "email",
+  "number",
+  "inn",
+  "companyName",
+  "name",
+  "lastname",
+  "password"
+]

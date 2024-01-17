@@ -1,5 +1,11 @@
 [
   {
+    "label": "Имя пользователя",
+    "name": "username",
+    "type": "text",
+    "required": true
+  },
+  {
     "label": "Имя",
     "name": "name",
     "type": "text",
@@ -7,19 +13,49 @@
   },
   {
     "label": "Фамилия",
-    "name": "lastName",
+    "name": "lastname",
     "type": "text",
     "required": true
   },
   {
-    "label": "Отчество",
-    "name": "middleName",
+    "label": "Город",
+    "name": "city",
     "type": "text",
-    "required": false
+    "required": true
+  },
+  {
+    "label": "Улица",
+    "name": "street",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Квартира",
+    "name": "number",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Широта",
+    "name": "lat",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Долгота",
+    "name": "long",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Почтовый индекс",
+    "name": "zipcode",
+    "type": "text",
+    "required": true
   },
   {
     "label": "Номер телефона",
-    "name": "number",
+    "name": "phone",
     "type": "tel",
     "required": true
   },

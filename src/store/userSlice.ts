@@ -1,25 +1,38 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import {
-  TBuyerLoginFormData,
-  TSellerLoginFormData,
-} from "@/models/LoginFormData";
+import { TUser } from "../models/user";
 
 const initialState = {
-  user: {},
+  user: {
+    email: "",
+    username: "",
+    password: "",
+    name: {
+      firstname: "",
+      lastname: "",
+    },
+    address: {
+      city: "",
+      street: "",
+      number: 0,
+      zipcode: "",
+      geolocation: {
+        lat: "",
+        long: "",
+      },
+    },
+    phone: "",
+  },
 };
 
 export const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
-    addUser: (
-      state,
-      action: PayloadAction<TBuyerLoginFormData | TSellerLoginFormData>
-    ) => {
+    addBuyerUser: (state, action: PayloadAction<TUser>) => {
       state.user = action.payload;
     },
   },
 });
 
-export const { addUser } = userSlice.actions;
+export const { addBuyerUser } = userSlice.actions;
 export default userSlice.reducer;

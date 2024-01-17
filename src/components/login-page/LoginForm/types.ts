@@ -2,7 +2,7 @@ export type field =
   | "number"
   | "status"
   | "name"
-  | "lastName"
+  | "lastname"
   | "password"
   | "email"
   | "companyName"

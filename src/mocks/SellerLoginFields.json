@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Имя пользователя",
+    "name": "username",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Имя",
+    "name": "name",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Фамилия",
+    "name": "lastname",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Отчество",
+    "name": "middleName",
+    "type": "text",
+    "required": false
+  },
+  {
+    "label": "Название ИП",
+    "name": "companyName",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "ИНН",
+    "name": "inn",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Пароль",
+    "name": "password",
+    "type": "password",
+    "required": true
+  }
+]

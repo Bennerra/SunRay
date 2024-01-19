@@ -2,24 +2,29 @@ import React, { FC, useEffect, useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
-import { TBuyerLoginFormData, TFormData } from "@/models/LoginFormData";
-import { loginFormSchema } from "../../../utils/schemes/LoginFormSchems";
-import { field } from "./types";
+import {
+  TBuyerLoginFormData,
+  TFormData,
+  TSellerLoginFormData,
+} from "@/models/LoginFormData";
+import { loginFormSchema } from "../../../utils/scheme/LoginFormSchems";
+import { defineUser } from "../../../utils/defineUser";
+import { addBuyerUser, addSellerUser } from "@/store/userSlice";
+import { useAppDispatch } from "@/hooks/redux";
+import { addUser } from "@/api/addUser";
 import resetFields from "@/mocks/ResetFields.json";
+import { field } from "./types";
 
+import { LoginFormLayout } from "@/layouts/LoginFormLayout";
+import { SellerForm } from "../SellerForm";
 import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
-import { SellerForm } from "../SellerForm";
 
 import { SiteContainer } from "@/styles/components";
-import { LoginFormLayout } from "@/layouts/LoginFormLayout";
-import { useAppDispatch } from "@/hooks/redux";
-import { addBuyerUser } from "@/store/userSlice";
-import { addUser } from "@/api/addUser";
-import { defineUser } from "../../../utils/defineUser";
+import { loginUser } from "../../../api/loginUser";
 
 const LoginForm: FC = () => {
-  const [status, setStatus] = useState("");
+  const [selectedStatus, setSelectedStatus] = useState("");
   const dispatch = useAppDispatch();
 
   const {
@@ -33,29 +38,34 @@ const LoginForm: FC = () => {
     resolver: yupResolver(loginFormSchema) as any,
   });
 
-  const onSubmit = async (data: TBuyerLoginFormData) => {
-    const user = defineUser(data);
-    try {
-      dispatch(addBuyerUser(user));
-      await addUser(user);
-
-      // eslint-disable-next-line no-console
-      console.log(data);
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.log(error);
+  const onSubmit = async (data: TBuyerLoginFormData | TSellerLoginFormData) => {
+    if (selectedStatus === "buyer") {
+      const user = defineUser(data as TBuyerLoginFormData);
+      try {
+        dispatch(addBuyerUser(user));
+        await addUser(user);
+        await loginUser({
+          username: "mor_2314",
+          password: "83r5^_",
+        });
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.log(error);
+      }
+    } else {
+      dispatch(addSellerUser(data as TSellerLoginFormData));
     }
   };
 
   useEffect(() => {
-    setStatus(watch("status"));
-  });
+    setSelectedStatus(watch("status"));
+  }, [watch("status")]);
 
   useEffect(() => {
     resetFields.forEach((name: field) => {
       resetField(name);
     });
-  }, [status]);
+  }, [selectedStatus]);
 
   return (
     <>
@@ -66,10 +76,10 @@ const LoginForm: FC = () => {
             name="status"
             control={control}
           />
-          {status === "buyer" && (
+          {selectedStatus === "buyer" && (
             <BuyerForm errors={errors} control={control} />
           )}
-          {status === "seller" && (
+          {selectedStatus === "seller" && (
             <SellerForm errors={errors} control={control} />
           )}
         </LoginFormLayout>

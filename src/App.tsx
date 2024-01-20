@@ -7,6 +7,7 @@ import { Wrapper } from "./styles/components";
 import GlobalStyles from "./styles/global";
 
 import { Login } from "./pages/Login";
+import { Buyers } from "./pages/Buyers";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" element={<Login />} />
+            <Route path="/buyers" element={<Buyers />} />
           </Routes>
         </Router>
         <GlobalStyles />

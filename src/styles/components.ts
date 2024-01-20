@@ -58,6 +58,18 @@ export const BigButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+export const ExitButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.background.default,
+  fontSize: "18px",
+  fontStyle: "normal",
+  fontWeight: 600,
+  lineHeight: "normal",
+  borderRadius: "11px",
+  padding: "11px 0",
+  width: "100%",
+  textTransform: "none",
+}));
+
 export const ClientFormLayout = styled(Box)(() => ({
   marginBottom: "51px",
   [theme.breakpoints.down("sm")]: {

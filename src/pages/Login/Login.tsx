@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 
-import { HeaderForm } from "@/components/login-page/HeaderForm";
 import { LoginForm } from "@/components/login-page/LoginForm";
+import { Header } from "../../components/common/Header";
 
 const Login: FC = () => (
   <main>
-    <HeaderForm />
+    <Header />
     <LoginForm />
   </main>
 );

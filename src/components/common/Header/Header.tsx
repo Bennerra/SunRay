@@ -1,17 +1,17 @@
 import React, { FC } from "react";
 
-import Logo from "@/assets/logo.svg";
-import LogoMobile from "@/assets/logo-mobile.svg";
+import Logo from "../../../assets/logo.svg";
+import LogoMobile from "../../../assets/logo-mobile.svg";
 
 import {
   SmallButton,
   HeaderContainer,
   SiteContainer,
-} from "@/styles/components";
+} from "../../../styles/components";
 import { HeaderLayout } from "./styles";
-import { useResize } from "@/hooks/useResize";
+import { useResize } from "../../../hooks/useResize";
 
-const HeaderForm: FC = () => {
+const Header: FC = () => {
   const { width } = useResize();
 
   return (
@@ -28,4 +28,4 @@ const HeaderForm: FC = () => {
   );
 };
 
-export default HeaderForm;
+export default Header;

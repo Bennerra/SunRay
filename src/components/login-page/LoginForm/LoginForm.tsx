@@ -54,6 +54,10 @@ const LoginForm: FC = () => {
       }
     } else {
       dispatch(addSellerUser(data as TSellerLoginFormData));
+      await loginUser({
+        username: "mor_2314",
+        password: "83r5^_",
+      });
     }
   };
 

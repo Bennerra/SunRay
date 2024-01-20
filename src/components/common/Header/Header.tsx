@@ -4,7 +4,7 @@ import Logo from "../../../assets/logo.svg";
 import LogoMobile from "../../../assets/logo-mobile.svg";
 
 import {
-  SmallButton,
+  MiddleButton,
   HeaderContainer,
   SiteContainer,
 } from "../../../styles/components";
@@ -19,9 +19,9 @@ const Header: FC = () => {
       <SiteContainer>
         <HeaderContainer>
           {width > 768 ? <Logo /> : <LogoMobile />}
-          <SmallButton variant="contained" color="primary">
+          <MiddleButton variant="contained" color="primary">
             Главная
-          </SmallButton>
+          </MiddleButton>
         </HeaderContainer>
       </SiteContainer>
     </HeaderLayout>

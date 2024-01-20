@@ -23,7 +23,7 @@ export const HeaderContainer = styled(SiteContainer)(() => ({
   },
 }));
 
-export const SmallButton = styled(Button)(({ theme }) => ({
+export const MiddleButton = styled(Button)(({ theme }) => ({
   borderRadius: "16px",
   fontSize: "21px",
   fontWeight: 600,
@@ -56,6 +56,16 @@ export const BigButton = styled(Button)(({ theme }) => ({
     padding: "8px 0",
     fontSize: "18px",
   },
+}));
+
+export const SmallButton = styled(Button)(({ theme }) => ({
+  borderRadius: "7px",
+  fontSize: "14px",
+  fontWeight: 600,
+  lineHeight: "normal",
+  textTransform: "none",
+  color: theme.palette.background.default,
+  padding: "10px 41px",
 }));
 
 export const ExitButton = styled(Button)(({ theme }) => ({

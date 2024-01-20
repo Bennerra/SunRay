@@ -42,7 +42,7 @@ const LoginForm: FC = () => {
     if (selectedStatus === "buyer") {
       const user = defineUser(data as TBuyerLoginFormData);
       try {
-        dispatch(addBuyerUser(user));
+        dispatch(addBuyerUser(data as TBuyerLoginFormData));
         await addUser(user);
         await loginUser({
           username: "mor_2314",

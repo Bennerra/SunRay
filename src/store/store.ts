@@ -3,7 +3,7 @@ import createSagaMiddleware from "redux-saga";
 
 import userReducer from "./userSlice";
 import usersReducer from "./usersSlice";
-import { rootWatcher } from "../saga";
+import { rootWatcher } from "@/saga";
 
 const sagaMiddleware = createSagaMiddleware();
 

@@ -1,14 +1,15 @@
 import React, { FC, useEffect } from "react";
 
-import { SellerMenu } from "@/components/common/SellerMenu";
-import { SellerContentLayout } from "@/layouts/SellerContentLayout";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { fetchUsers } from "@/store/usersSlice";
+
+import { SellerContentLayout } from "@/layouts/SellerContentLayout";
+import { SellerMenu } from "@/components/common/SellerMenu";
+import { Loader } from "@/components/common/Loader";
 import { UserCard } from "../UserCard";
-import { CardsList } from "./styles";
-import { Loader } from "../../common/Loader";
 
 import { MessageText } from "@/styles/components";
+import { CardsList } from "./styles";
 
 const BuyersContent: FC = () => {
   const dispatch = useAppDispatch();
@@ -30,9 +31,9 @@ const BuyersContent: FC = () => {
           {users.map((user) => (
             <UserCard key={user.username} {...user} />
           ))}
+          {error && <MessageText>Что-то пошло не так :(</MessageText>}
         </CardsList>
       )}
-      {error && <MessageText>Что-то пошло не так :(</MessageText>}
     </SellerContentLayout>
   );
 };

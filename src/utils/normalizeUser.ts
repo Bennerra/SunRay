@@ -1,7 +1,8 @@
-import { TUser } from "../models/TUser";
+import { TUser } from "@/models/TUser";
 
 export const normalizeUser = (user: TUser) => {
   const { username, name, email, phone, password, address } = user;
+
   return {
     email,
     username,

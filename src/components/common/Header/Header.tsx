@@ -1,15 +1,17 @@
 import React, { FC } from "react";
+import { Link } from "react-router-dom";
 
-import Logo from "../../../assets/logo.svg";
-import LogoMobile from "../../../assets/logo-mobile.svg";
+import { useResize } from "@/hooks/useResize";
+
+import Logo from "@/assets/logo.svg";
+import LogoMobile from "@/assets/logo-mobile.svg";
 
 import {
   MiddleButton,
   HeaderContainer,
   SiteContainer,
-} from "../../../styles/components";
+} from "@/styles/components";
 import { HeaderLayout } from "./styles";
-import { useResize } from "../../../hooks/useResize";
 
 const Header: FC = () => {
   const { width } = useResize();
@@ -18,7 +20,7 @@ const Header: FC = () => {
     <HeaderLayout>
       <SiteContainer>
         <HeaderContainer>
-          {width > 768 ? <Logo /> : <LogoMobile />}
+          <Link to="/">{width > 768 ? <Logo /> : <LogoMobile />}</Link>
           <MiddleButton variant="contained" color="primary">
             Главная
           </MiddleButton>

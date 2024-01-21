@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { TBuyerData } from "../models/LoginFormData";
+
+import { TBuyerData } from "@/models/LoginFormData";
 
 interface IUsersState {
   users: TBuyerData[];

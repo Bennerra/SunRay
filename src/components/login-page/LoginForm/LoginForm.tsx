@@ -3,7 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
 import {
-  TBuyerLoginFormData,
+  TBuyerData,
   TFormData,
   TSellerLoginFormData,
 } from "@/models/LoginFormData";
@@ -38,11 +38,11 @@ const LoginForm: FC = () => {
     resolver: yupResolver(loginFormSchema) as any,
   });
 
-  const onSubmit = async (data: TBuyerLoginFormData | TSellerLoginFormData) => {
+  const onSubmit = async (data: TBuyerData | TSellerLoginFormData) => {
     if (selectedStatus === "buyer") {
-      const user = defineUser(data as TBuyerLoginFormData);
+      const user = defineUser(data as TBuyerData);
       try {
-        dispatch(addBuyerUser(data as TBuyerLoginFormData));
+        dispatch(addBuyerUser(data as TBuyerData));
         await addUser(user);
         await loginUser({
           username: "mor_2314",

@@ -1,4 +1,8 @@
 import React, { FC } from "react";
+
+import { TBuyerData } from "@/models/LoginFormData";
+import { TUserPoint } from "./types";
+
 import {
   UserAddressTitle,
   UserInfoLayout,
@@ -6,8 +10,6 @@ import {
   UserText,
   UserTextPoint,
 } from "./styles";
-import { TBuyerLoginFormData } from "@/models/LoginFormData";
-import { TUserPoint } from "./types";
 
 const userInfoPoints: TUserPoint[] = [
   { text: "Имя", key: "name" },
@@ -22,14 +24,14 @@ const userAddressPoints: TUserPoint[] = [
   { text: "Дом", key: "number" },
 ];
 
-const UserInfo: FC<TBuyerLoginFormData> = ({ ...props }) => {
+const UserInfo: FC<TBuyerData> = ({ ...props }) => {
   return (
     <UserInfoLayout>
       <UserPointsList>
         {userInfoPoints.map((point) => (
           <UserText key={point.key}>
             <UserTextPoint>{point.text}: </UserTextPoint>
-            {props[point.key as keyof TBuyerLoginFormData]}
+            {props[point.key as keyof TBuyerData]}
           </UserText>
         ))}
       </UserPointsList>
@@ -38,7 +40,7 @@ const UserInfo: FC<TBuyerLoginFormData> = ({ ...props }) => {
         {userAddressPoints.map((point) => (
           <UserText key={point.key}>
             <UserTextPoint>{point.text}: </UserTextPoint>
-            {props[point.key as keyof TBuyerLoginFormData]}
+            {props[point.key as keyof TBuyerData]}
           </UserText>
         ))}
       </UserPointsList>

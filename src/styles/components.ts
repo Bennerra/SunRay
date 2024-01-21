@@ -1,4 +1,4 @@
-import { Box, Button, Container, styled } from "@mui/material";
+import { Box, Button, Container, styled, Typography } from "@mui/material";
 import { theme } from "@/styles/theme";
 
 export const Wrapper = styled(Box)(() => ({
@@ -85,4 +85,13 @@ export const ClientFormLayout = styled(Box)(() => ({
   [theme.breakpoints.down("sm")]: {
     marginBottom: "21px",
   },
+}));
+
+export const MessageText = styled(Typography)(({ theme }) => ({
+  color: theme.palette.secondary.dark,
+  fontFamily: ["Roboto Slab", "serif"].join(","),
+  fontSize: "26px",
+  textAlign: "center",
+  width: "100%",
+  marginTop: "100px",
 }));

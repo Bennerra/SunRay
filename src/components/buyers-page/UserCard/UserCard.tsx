@@ -1,11 +1,12 @@
 import React, { FC } from "react";
-import { TBuyerLoginFormData } from "@/models/LoginFormData";
 
-import { UserButtonList, UserCardLayout, UserName } from "./styles";
-import { SmallButton } from "@/styles/components";
+import { TBuyerData } from "@/models/LoginFormData";
 import { UserInfo } from "../UserInfo";
 
-const UserCard: FC<TBuyerLoginFormData> = ({ ...props }) => {
+import { SmallButton } from "@/styles/components";
+import { UserButtonList, UserCardLayout, UserName } from "./styles";
+
+const UserCard: FC<TBuyerData> = ({ ...props }) => {
   return (
     <UserCardLayout>
       <UserName>{props.username}</UserName>

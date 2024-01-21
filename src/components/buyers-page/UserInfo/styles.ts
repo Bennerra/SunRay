@@ -12,7 +12,7 @@ export const UserText = styled(Typography)(({ theme }) => ({
   lineHeight: "normal",
 }));
 
-export const UserTextPoint = styled(Typography)(({ theme }) => ({
+export const UserTextPoint = styled("span")(({ theme }) => ({
   color: theme.palette.secondary.dark,
   fontWeight: 400,
 }));

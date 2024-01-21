@@ -1,6 +1,4 @@
 import { FieldErrors } from "react-hook-form";
-import { TBuyerLoginFormData, TSellerLoginFormData } from "./LoginFormData";
+import { TBuyerData, TSellerLoginFormData } from "./LoginFormData";
 
-export type TKeyError = keyof FieldErrors<
-  TBuyerLoginFormData | TSellerLoginFormData
->;
+export type TKeyError = keyof FieldErrors<TBuyerData | TSellerLoginFormData>;

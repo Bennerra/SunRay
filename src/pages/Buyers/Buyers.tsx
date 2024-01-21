@@ -1,22 +1,17 @@
 import React, { FC } from "react";
+
 import { Header } from "@/components/common/Header";
-import { SiteContainer } from "../../styles/components";
-import SellerMenu from "../../components/common/SellerMenu/SellerMenu";
-import { UserCard } from "../../components/buyers-page/UserCard";
-import { useAppSelector } from "../../hooks/redux";
 
-const Buyers: FC = () => {
-  const user = useAppSelector((state) => state.user.buyer);
+import { SiteContainer } from "@/styles/components";
+import { BuyersContent } from "@/components/buyers-page/BuyersContent";
 
-  return (
-    <main>
-      <Header />
-      <SiteContainer>
-        <SellerMenu />
-        <UserCard {...user} />
-      </SiteContainer>
-    </main>
-  );
-};
+const Buyers: FC = () => (
+  <main>
+    <Header />
+    <SiteContainer>
+      <BuyersContent />
+    </SiteContainer>
+  </main>
+);
 
 export default Buyers;

@@ -6,6 +6,7 @@ export const UserCardLayout = styled(Box)(({ theme }) => ({
   border: "1px solid #ddd",
   padding: "30px 44px 42px 44px",
   width: "100%",
+  maxWidth: "627px",
 }));
 
 export const UserName = styled(Typography)(({ theme }) => ({

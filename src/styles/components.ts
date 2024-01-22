@@ -1,4 +1,4 @@
-import { Box, Button, Container, styled } from "@mui/material";
+import { Box, Button, Container, styled, Typography } from "@mui/material";
 import { theme } from "@/styles/theme";
 
 export const Wrapper = styled(Box)(() => ({
@@ -23,7 +23,7 @@ export const HeaderContainer = styled(SiteContainer)(() => ({
   },
 }));
 
-export const SmallButton = styled(Button)(({ theme }) => ({
+export const MiddleButton = styled(Button)(({ theme }) => ({
   borderRadius: "16px",
   fontSize: "21px",
   fontWeight: 600,
@@ -58,9 +58,40 @@ export const BigButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+export const SmallButton = styled(Button)(({ theme }) => ({
+  borderRadius: "7px",
+  fontSize: "14px",
+  fontWeight: 600,
+  lineHeight: "normal",
+  textTransform: "none",
+  color: theme.palette.background.default,
+  padding: "10px 41px",
+}));
+
+export const ExitButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.background.default,
+  fontSize: "18px",
+  fontStyle: "normal",
+  fontWeight: 600,
+  lineHeight: "normal",
+  borderRadius: "11px",
+  padding: "11px 0",
+  width: "100%",
+  textTransform: "none",
+}));
+
 export const ClientFormLayout = styled(Box)(() => ({
   marginBottom: "51px",
   [theme.breakpoints.down("sm")]: {
     marginBottom: "21px",
   },
+}));
+
+export const MessageText = styled(Typography)(({ theme }) => ({
+  color: theme.palette.secondary.dark,
+  fontFamily: ["Roboto Slab", "serif"].join(","),
+  fontSize: "26px",
+  textAlign: "center",
+  width: "100%",
+  marginTop: "100px",
 }));

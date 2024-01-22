@@ -30,7 +30,7 @@
     "required": true
   },
   {
-    "label": "Квартира",
+    "label": "Дом",
     "name": "number",
     "type": "text",
     "required": true

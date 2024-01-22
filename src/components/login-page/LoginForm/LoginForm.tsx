@@ -3,25 +3,24 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
 import {
-  TBuyerLoginFormData,
+  TBuyerData,
   TFormData,
   TSellerLoginFormData,
 } from "@/models/LoginFormData";
-import { loginFormSchema } from "../../../utils/scheme/LoginFormSchems";
-import { defineUser } from "../../../utils/defineUser";
-import { addBuyerUser, addSellerUser } from "@/store/userSlice";
+import { loginFormSchema } from "@/utils/scheme/LoginFormSchems";
+import { getUserToken } from "@/utils/getUserToken";
+import { addBuyerUser, setSellerUser } from "@/store/userSlice";
 import { useAppDispatch } from "@/hooks/redux";
-import { addUser } from "@/api/addUser";
 import resetFields from "@/mocks/ResetFields.json";
-import { field } from "./types";
+import { loginUser } from "@/api/loginUser";
 
 import { LoginFormLayout } from "@/layouts/LoginFormLayout";
 import { SellerForm } from "../SellerForm";
 import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
 
+import { field } from "./types";
 import { SiteContainer } from "@/styles/components";
-import { loginUser } from "../../../api/loginUser";
 
 const LoginForm: FC = () => {
   const [selectedStatus, setSelectedStatus] = useState("");
@@ -38,23 +37,17 @@ const LoginForm: FC = () => {
     resolver: yupResolver(loginFormSchema) as any,
   });
 
-  const onSubmit = async (data: TBuyerLoginFormData | TSellerLoginFormData) => {
+  const onSubmit = async (data: TBuyerData | TSellerLoginFormData) => {
     if (selectedStatus === "buyer") {
-      const user = defineUser(data as TBuyerLoginFormData);
-      try {
-        dispatch(addBuyerUser(user));
-        await addUser(user);
-        await loginUser({
-          username: "mor_2314",
-          password: "83r5^_",
-        });
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.log(error);
-      }
+      dispatch(addBuyerUser(data as TBuyerData));
     } else {
-      dispatch(addSellerUser(data as TSellerLoginFormData));
+      dispatch(setSellerUser(data as TSellerLoginFormData));
     }
+    await loginUser({
+      username: "mor_2314",
+      password: "83r5^_",
+    });
+    getUserToken(dispatch);
   };
 
   useEffect(() => {

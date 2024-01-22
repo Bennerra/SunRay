@@ -4,18 +4,15 @@ import {
   UseFormHandleSubmit,
 } from "react-hook-form/dist/types/form";
 
-import {
-  TBuyerLoginFormData,
-  TSellerLoginFormData,
-} from "@/models/LoginFormData";
+import { TBuyerData, TSellerLoginFormData } from "@/models/LoginFormData";
 
 import { BigButton } from "@/styles/components";
 import { MainForm } from "@/styles/mainForm";
 import { FormLoginLayout, FormTitle } from "./styles";
 
 interface ILoginFormLayoutProps {
-  handleSubmit: UseFormHandleSubmit<TBuyerLoginFormData | TSellerLoginFormData>;
-  onSubmit: SubmitHandler<TBuyerLoginFormData | TSellerLoginFormData>;
+  handleSubmit: UseFormHandleSubmit<TBuyerData | TSellerLoginFormData>;
+  onSubmit: SubmitHandler<TBuyerData | TSellerLoginFormData>;
   children: React.ReactNode;
 }
 

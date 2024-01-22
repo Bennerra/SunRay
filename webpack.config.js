@@ -7,6 +7,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "public"),
+    publicPath: "/",
   },
   devServer: {
     static: {
@@ -14,6 +15,7 @@ module.exports = {
     },
     port: 3000,
     compress: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [

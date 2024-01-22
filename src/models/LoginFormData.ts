@@ -6,7 +6,7 @@ type TBaseFormData = {
   status: string;
 };
 
-export type TBuyerLoginFormData = TBaseFormData & {
+export type TBuyerData = TBaseFormData & {
   city: string;
   street: string;
   number: string;

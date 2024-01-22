@@ -15,7 +15,9 @@
     "indent": ["error", 2],
     "no-multi-spaces": "error",
     "no-multiple-empty-lines": "error",
-    "@typescript-eslint/no-explicit-any": ["off"]
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "react/display-name": "off",
+    "react/prop-types" : "off"
   },
   "settings": {
     "react": {

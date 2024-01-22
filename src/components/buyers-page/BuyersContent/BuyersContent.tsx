@@ -6,10 +6,7 @@ import { fetchUsers } from "@/store/usersSlice";
 import { SellerContentLayout } from "@/layouts/SellerContentLayout";
 import { SellerMenu } from "@/components/common/SellerMenu";
 import { Loader } from "@/components/common/Loader";
-import { UserCard } from "../UserCard";
-
-import { MessageText } from "@/styles/components";
-import { CardsList } from "./styles";
+import { BuyersCardList } from "../BuyersCardList";
 
 const BuyersContent: FC = () => {
   const dispatch = useAppDispatch();
@@ -24,16 +21,7 @@ const BuyersContent: FC = () => {
   return (
     <SellerContentLayout>
       <SellerMenu />
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <CardsList>
-          {users.map((user) => (
-            <UserCard key={user.username} {...user} />
-          ))}
-          {error && <MessageText>Что-то пошло не так :(</MessageText>}
-        </CardsList>
-      )}
+      {isLoading ? <Loader /> : <BuyersCardList users={users} error={error} />}
     </SellerContentLayout>
   );
 };

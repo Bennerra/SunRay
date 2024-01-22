@@ -16,12 +16,14 @@ const userInfoPoints: TUserPoint[] = [
   { text: "Фамилия", key: "lastname" },
   { text: "Почта", key: "email" },
   { text: "Номер телефона", key: "phone" },
-  { text: "Почтовый индекс", key: "zipcode" },
 ];
 const userAddressPoints: TUserPoint[] = [
   { text: "Город", key: "city" },
   { text: "Улица", key: "street" },
   { text: "Дом", key: "number" },
+  { text: "Почтовый индекс", key: "zipcode" },
+  { text: "Широта", key: "lat" },
+  { text: "Долгота", key: "long" },
 ];
 
 const UserInfo: FC<TBuyerData> = ({ ...props }) => {

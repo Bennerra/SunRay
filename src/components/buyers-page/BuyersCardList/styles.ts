@@ -1,6 +1,6 @@
 import { Box, styled } from "@mui/material";
 
-export const CardsList = styled(Box)(() => ({
+export const CardsListLayout = styled(Box)(() => ({
   width: "100%",
   display: "flex",
   flexDirection: "column",

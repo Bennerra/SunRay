@@ -1,6 +1,11 @@
-import { TBuyerData, TSellerLoginFormData } from "@/models/LoginFormData";
+import {
+  TBuyerLoginFormData,
+  TSellerLoginFormData,
+} from "@/models/LoginFormData";
 
-export const loginUserData = (data: TBuyerData | TSellerLoginFormData) => {
+export const loginUserData = (
+  data: TBuyerLoginFormData | TSellerLoginFormData
+) => {
   const { username, password } = data;
 
   return {

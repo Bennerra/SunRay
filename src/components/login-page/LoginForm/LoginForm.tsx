@@ -3,11 +3,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
 import {
-  TBuyerData,
+  TBuyerLoginFormData,
   TFormData,
   TSellerLoginFormData,
 } from "@/models/LoginFormData";
-import { loginFormSchema } from "@/utils/scheme/LoginFormSchems";
+import { loginFormScheme } from "@/utils/scheme/LoginFormScheme";
 import { getUserToken } from "@/utils/getUserToken";
 import { addBuyerUser, setSellerUser } from "@/store/userSlice";
 import { useAppDispatch } from "@/hooks/redux";
@@ -20,7 +20,6 @@ import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
 
 import { field } from "./types";
-import { SiteContainer } from "@/styles/components";
 
 const LoginForm: FC = () => {
   const [selectedStatus, setSelectedStatus] = useState("");
@@ -34,12 +33,12 @@ const LoginForm: FC = () => {
     formState: { errors },
   } = useForm<TFormData>({
     mode: "onBlur",
-    resolver: yupResolver(loginFormSchema) as any,
+    resolver: yupResolver(loginFormScheme) as any,
   });
 
-  const onSubmit = async (data: TBuyerData | TSellerLoginFormData) => {
+  const onSubmit = async (data: TBuyerLoginFormData | TSellerLoginFormData) => {
     if (selectedStatus === "buyer") {
-      dispatch(addBuyerUser(data as TBuyerData));
+      dispatch(addBuyerUser(data as TBuyerLoginFormData));
     } else {
       dispatch(setSellerUser(data as TSellerLoginFormData));
     }
@@ -62,21 +61,19 @@ const LoginForm: FC = () => {
 
   return (
     <>
-      <SiteContainer>
-        <LoginFormLayout handleSubmit={handleSubmit} onSubmit={onSubmit}>
-          <RadioList
-            helperText={errors?.status?.message}
-            name="status"
-            control={control}
-          />
-          {selectedStatus === "buyer" && (
-            <BuyerForm errors={errors} control={control} />
-          )}
-          {selectedStatus === "seller" && (
-            <SellerForm errors={errors} control={control} />
-          )}
-        </LoginFormLayout>
-      </SiteContainer>
+      <LoginFormLayout handleSubmit={handleSubmit} onSubmit={onSubmit}>
+        <RadioList
+          helperText={errors?.status?.message}
+          name="status"
+          control={control}
+        />
+        {selectedStatus === "buyer" && (
+          <BuyerForm errors={errors} control={control} />
+        )}
+        {selectedStatus === "seller" && (
+          <SellerForm errors={errors} control={control} />
+        )}
+      </LoginFormLayout>
     </>
   );
 };

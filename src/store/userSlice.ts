@@ -1,7 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { TBuyerData, TSellerLoginFormData } from "../models/LoginFormData";
-import { TUser } from "../models/TUser";
+import {
+  TBuyerLoginFormData,
+  TSellerLoginFormData,
+} from "@/models/LoginFormData";
+import { TUser } from "@/models/TUser";
 
 const initialState = {
   buyer: {},
@@ -24,7 +27,7 @@ export const userSlice = createSlice({
     setIdUser: (state, action: PayloadAction<number>) => {
       state.idUser = action.payload;
     },
-    addBuyerUser: (state, action: PayloadAction<TBuyerData>) => {
+    addBuyerUser: (state, action: PayloadAction<TBuyerLoginFormData>) => {
       state.formBuyerData = action.payload;
     },
     setIsAuth: (state, action: PayloadAction<boolean>) => {

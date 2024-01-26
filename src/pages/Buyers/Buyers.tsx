@@ -1,14 +1,12 @@
 import React, { FC } from "react";
 
-import { SiteContainer } from "@/styles/components";
 import { BuyersContent } from "@/components/buyers-page/BuyersContent";
+import { PageLayout } from "@/layouts/PageLayout";
 
 const Buyers: FC = () => (
-  <main>
-    <SiteContainer>
-      <BuyersContent />
-    </SiteContainer>
-  </main>
+  <PageLayout>
+    <BuyersContent />
+  </PageLayout>
 );
 
 export default Buyers;

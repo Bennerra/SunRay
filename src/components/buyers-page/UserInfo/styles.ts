@@ -2,6 +2,7 @@ import { Box, styled, Typography } from "@mui/material";
 
 export const UserInfoLayout = styled(Box)(() => ({
   marginBottom: "32px",
+  maxWidth: "530px",
 }));
 
 export const UserText = styled(Typography)(({ theme }) => ({
@@ -21,6 +22,12 @@ export const UserPointsList = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   gap: "3px",
+}));
+
+export const UserPointsAddressList = styled(Box)(() => ({
+  display: "grid",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  gridGap: "3px 0",
 }));
 
 export const UserAddressTitle = styled(Typography)(({ theme }) => ({

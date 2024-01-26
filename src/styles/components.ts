@@ -1,5 +1,6 @@
 import { Box, Button, Container, styled, Typography } from "@mui/material";
 import { theme } from "@/styles/theme";
+import { Link } from "react-router-dom";
 
 export const Wrapper = styled(Box)(() => ({
   display: "flex",
@@ -94,4 +95,35 @@ export const MessageText = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   width: "100%",
   marginTop: "100px",
+}));
+
+export const FormLayout = styled(Box)(({ theme }) => ({
+  width: "74%",
+  margin: "0 auto",
+  padding: "80px 90px 122px 90px",
+  borderRadius: "60px",
+  border: "2px solid #F2F2F2",
+  background: theme.palette.background.default,
+  boxShadow: "12px 9px 77px 0px rgba(53, 53, 53, 0.05)",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: "150px",
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    padding: "60px 70px 80px 70px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "40px 50px 60px 50px",
+  },
+  [theme.breakpoints.down("xs")]: {
+    borderRadius: "28px",
+    padding: "35px 25px 40px 25px",
+  },
+}));
+
+export const ButtonLink = styled(Link)(() => ({
+  width: "100%",
+  textAlign: "center",
 }));

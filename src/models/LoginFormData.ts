@@ -7,6 +7,18 @@ type TBaseFormData = {
 };
 
 export type TBuyerData = TBaseFormData & {
+  id: number;
+  city: string;
+  street: string;
+  number: string;
+  lat: string;
+  long: string;
+  zipcode: string;
+  phone: string;
+  email: string;
+};
+
+export type TBuyerLoginFormData = TBaseFormData & {
   city: string;
   street: string;
   number: string;

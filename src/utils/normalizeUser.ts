@@ -1,9 +1,10 @@
 import { TUser } from "@/models/TUser";
 
 export const normalizeUser = (user: TUser) => {
-  const { username, name, email, phone, password, address } = user;
+  const { id, username, name, email, phone, password, address } = user;
 
   return {
+    id,
     email,
     username,
     password,

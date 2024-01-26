@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 
 import { ContentLayout } from "./styles";
 
 interface ISellerContentLayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const SellerContentLayout: FC<ISellerContentLayoutProps> = ({ children }) => (

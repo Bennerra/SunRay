@@ -6,6 +6,7 @@ import { TUserPoint } from "./types";
 import {
   UserAddressTitle,
   UserInfoLayout,
+  UserPointsAddressList,
   UserPointsList,
   UserText,
   UserTextPoint,
@@ -38,14 +39,14 @@ const UserInfo: FC<TBuyerData> = ({ ...props }) => {
         ))}
       </UserPointsList>
       <UserAddressTitle>Адрес:</UserAddressTitle>
-      <UserPointsList>
+      <UserPointsAddressList>
         {userAddressPoints.map((point) => (
           <UserText key={point.key}>
             <UserTextPoint>{point.text}: </UserTextPoint>
             {props[point.key as keyof TBuyerData]}
           </UserText>
         ))}
-      </UserPointsList>
+      </UserPointsAddressList>
     </UserInfoLayout>
   );
 };

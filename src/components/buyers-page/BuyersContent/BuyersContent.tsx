@@ -24,7 +24,11 @@ const BuyersContent: FC = () => {
   const { register, watch } = useForm<TFilter>();
 
   useEffect(() => {
-    searchParams.set("username", watch("username"));
+    if (watch("username") === "") {
+      searchParams.delete("username");
+    } else {
+      searchParams.set("username", watch("username"));
+    }
     const newUrl = `${window.location.pathname}?${searchParams.toString()}`;
     window.history.replaceState({}, "", newUrl);
     setCardsQuery(searchParams.get("username") || "");

@@ -3,10 +3,9 @@ import React, { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { fetchUsers } from "@/store/usersSlice";
 
-import { SellerContentLayout } from "@/layouts/SellerContentLayout";
-import { SellerMenu } from "@/components/common/SellerMenu";
 import { Loader } from "@/components/common/Loader";
 import { BuyersCardList } from "../BuyersCardList";
+import { SellerLayout } from "@/layouts/SellerLayout";
 
 const BuyersContent: FC = () => {
   const dispatch = useAppDispatch();
@@ -19,10 +18,9 @@ const BuyersContent: FC = () => {
   }, []);
 
   return (
-    <SellerContentLayout>
-      <SellerMenu />
+    <SellerLayout>
       {isLoading ? <Loader /> : <BuyersCardList users={users} error={error} />}
-    </SellerContentLayout>
+    </SellerLayout>
   );
 };
 

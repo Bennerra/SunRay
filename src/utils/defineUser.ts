@@ -2,6 +2,7 @@ import { TBuyerData } from "../models/LoginFormData";
 
 export const defineUser = (data: TBuyerData) => {
   const {
+    id,
     email,
     username,
     password,
@@ -17,6 +18,7 @@ export const defineUser = (data: TBuyerData) => {
   } = data;
 
   return {
+    id,
     email,
     username,
     password,

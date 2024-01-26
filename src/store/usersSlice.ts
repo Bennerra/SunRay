@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { TBuyerData } from "@/models/LoginFormData";
+import { TUpdateUser } from "@/models/TUpdateUser";
 
 interface IUsersState {
   users: TBuyerData[];
@@ -26,11 +27,21 @@ export const usersSlice = createSlice({
       state.error = action.payload;
       state.isLoading = false;
     },
+    updateUsers: (state, action: PayloadAction<TUpdateUser>) => {
+      state.users = state.users.map((el) => {
+        if (el.id === Number(action.payload.id)) {
+          return { ...el, ...action.payload.data };
+        } else {
+          return el;
+        }
+      });
+    },
     fetchUsers: (state) => {
       state.isLoading = true;
     },
   },
 });
 
-export const { setUsers, setUsersError, fetchUsers } = usersSlice.actions;
+export const { setUsers, setUsersError, updateUsers, fetchUsers } =
+  usersSlice.actions;
 export default usersSlice.reducer;

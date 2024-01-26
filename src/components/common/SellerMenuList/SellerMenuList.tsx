@@ -13,21 +13,29 @@ const menuListData: TSellerMenuItem[] = [
   {
     text: "Личный кабинет",
     icon: <ProfileIcon />,
+    path: "",
   },
   {
     text: "Товары магазина",
     icon: <GoodsIcon />,
+    path: "",
   },
   {
     text: "Покупатели",
     icon: <BuyersIcon />,
+    path: "/buyers",
   },
 ];
 
 const SellerMenuList: FC = () => (
   <SellerMenuListLayout>
     {menuListData.map((item) => (
-      <SellerMenuItem key={item.text} icon={item.icon} text={item.text} />
+      <SellerMenuItem
+        key={item.text}
+        path={item.path}
+        icon={item.icon}
+        text={item.text}
+      />
     ))}
   </SellerMenuListLayout>
 );

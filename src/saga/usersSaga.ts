@@ -1,8 +1,8 @@
-import instance from "../api/instance";
+import instance from "@/api/instance";
 import { put, call, takeEvery } from "redux-saga/effects";
-import { setUsers, setUsersError } from "../store/usersSlice";
-import { normalizeUser } from "../utils/normalizeUser";
-import { TUser } from "../models/TUser";
+import { setUsers, setUsersError } from "@/store/usersSlice";
+import { normalizeUser } from "@/utils/normalizeUser";
+import { TUser } from "@/models/TUser";
 
 function* fetchUsersSaga(): Generator<any, any, any> {
   try {

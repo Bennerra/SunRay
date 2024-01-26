@@ -10,15 +10,22 @@ import { MessageText } from "@/styles/components";
 interface ICardListProps {
   users: TBuyerData[];
   error: string;
+  cardsQuery: string;
 }
 
-const BuyersCardList: FC<ICardListProps> = memo(({ users, error }) => (
-  <CardsListLayout>
-    {users.map((user) => (
-      <UserCard key={user.username} {...user} />
-    ))}
-    {error && <MessageText>Что-то пошло не так :(</MessageText>}
-  </CardsListLayout>
-));
+const BuyersCardList: FC<ICardListProps> = memo(
+  ({ users, error, cardsQuery }) => {
+    return (
+      <CardsListLayout>
+        {users
+          .filter((card) => card.username.includes(cardsQuery.toLowerCase()))
+          .map((user) => (
+            <UserCard key={user.username} {...user} />
+          ))}
+        {error && <MessageText>Что-то пошло не так :(</MessageText>}
+      </CardsListLayout>
+    );
+  }
+);
 
 export default BuyersCardList;

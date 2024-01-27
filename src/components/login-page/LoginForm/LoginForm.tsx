@@ -13,13 +13,12 @@ import { addBuyerUser, setSellerUser } from "@/store/userSlice";
 import { useAppDispatch } from "@/hooks/redux";
 import resetFields from "@/mocks/ResetFields.json";
 import { loginUser } from "@/api/loginUser";
+import { field } from "./types";
 
 import { LoginFormLayout } from "@/layouts/LoginFormLayout";
 import { SellerForm } from "../SellerForm";
 import { RadioList } from "../RadioList";
 import { BuyerForm } from "../BuyerForm";
-
-import { field } from "./types";
 
 const LoginForm: FC = () => {
   const [selectedStatus, setSelectedStatus] = useState("");

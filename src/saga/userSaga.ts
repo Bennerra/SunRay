@@ -1,7 +1,7 @@
-import instance from "@/api/instance";
 import { call, put, takeEvery } from "redux-saga/effects";
 import { PayloadAction } from "@reduxjs/toolkit";
 
+import instance from "@/api/instance";
 import { defineUser } from "@/utils/defineUser";
 import { setBuyerUser, setIdUser } from "@/store/userSlice";
 import { TBuyerData } from "@/models/LoginFormData";

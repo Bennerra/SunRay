@@ -1,13 +1,14 @@
 import React, { FC, memo } from "react";
 import { Link } from "react-router-dom";
 
-import { TBuyerData } from "@/models/LoginFormData";
-import { UserInfo } from "../UserInfo";
+import { TGetSingleUser } from "@/models/TGetSingleUser";
+
+import { UserInfo } from "@/components/common/UserInfo";
 
 import { SmallButton } from "@/styles/components";
 import { UserButtonList, UserCardLayout, UserName } from "./styles";
 
-const UserCard: FC<TBuyerData> = memo(({ ...props }) => (
+const UserCard: FC<TGetSingleUser> = memo(({ ...props }) => (
   <UserCardLayout>
     <UserName>{props.username}</UserName>
     <UserInfo {...props} />

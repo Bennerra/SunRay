@@ -15,10 +15,10 @@ import resetFields from "@/mocks/ResetFields.json";
 import { loginUser } from "@/api/loginUser";
 import { field } from "./types";
 
+import { BuyerForm } from "@/components/common/BuyerForm";
 import { LoginFormLayout } from "@/layouts/LoginFormLayout";
 import { SellerForm } from "../SellerForm";
 import { RadioList } from "../RadioList";
-import { BuyerForm } from "../BuyerForm";
 
 const LoginForm: FC = () => {
   const [selectedStatus, setSelectedStatus] = useState("");

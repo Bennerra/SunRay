@@ -1,6 +1,6 @@
 import React, { FC, memo } from "react";
 
-import { TBuyerData } from "@/models/LoginFormData";
+import { TGetSingleUser } from "@/models/TGetSingleUser";
 
 import { UserCard } from "../UserCard";
 
@@ -8,7 +8,7 @@ import { CardsListLayout } from "./styles";
 import { MessageText } from "@/styles/components";
 
 interface ICardListProps {
-  users: TBuyerData[];
+  users: TGetSingleUser[];
   error: string;
   cardsQuery: string;
 }

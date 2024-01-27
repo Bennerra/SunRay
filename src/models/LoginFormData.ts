@@ -35,6 +35,21 @@ export type TSellerLoginFormData = TBaseFormData & {
   inn: string;
 };
 
+export type TUpdateUserLoginFormData = {
+  city: string;
+  street: string;
+  number: string;
+  lat: string;
+  long: string;
+  zipcode: string;
+  phone: string;
+  email: string;
+  username: string;
+  name: string;
+  lastname: string;
+  password: string;
+};
+
 export type TFormData = {
   username: string;
   name: string;

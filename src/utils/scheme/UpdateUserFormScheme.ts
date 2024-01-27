@@ -11,6 +11,13 @@ export const updateUserFormScheme = yup.object().shape({
     .string()
     .required("Это обязательное поле!")
     .min(8, "Пароль должен быть не менее 8 символов"),
+  city: yup.string().required("Это обязательное поле!"),
+  street: yup.string().required("Это обязательное поле!"),
+  number: yup.string().required("Это обязательное поле!"),
+  lat: yup.string().required("Это обязательное поле!"),
+  long: yup.string().required("Это обязательное поле!"),
+  zipcode: yup.string().required("Это обязательное поле!"),
+  phone: yup.string().required("Это обязательное поле!"),
   email: yup
     .string()
     .required("Это обязательное поле!")

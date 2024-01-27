@@ -1,5 +1,6 @@
-import instance from "@/api/instance";
 import { put, call, takeEvery } from "redux-saga/effects";
+
+import instance from "@/api/instance";
 import { setUsers, setUsersError } from "@/store/usersSlice";
 import { normalizeUser } from "@/utils/normalizeUser";
 import { TUser } from "@/models/TUser";

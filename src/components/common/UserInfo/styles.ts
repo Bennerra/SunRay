@@ -2,7 +2,7 @@ import { Box, styled, Typography } from "@mui/material";
 
 export const UserInfoLayout = styled(Box)(() => ({
   marginBottom: "32px",
-  maxWidth: "530px",
+  maxWidth: "600px",
 }));
 
 export const UserText = styled(Typography)(({ theme }) => ({
